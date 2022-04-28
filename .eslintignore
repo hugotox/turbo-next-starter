@@ -1,0 +1,5 @@
+.yalc
+.next
+dist
+node_modules
+next.config.js

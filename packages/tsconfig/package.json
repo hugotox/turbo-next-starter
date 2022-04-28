@@ -1,0 +1,15 @@
+{
+  "name": "tsconfig",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "sideEffects": false,
+  "files": [
+    "base.json",
+    "nextjs.json",
+    "react-library.json"
+  ],
+  "volta": {
+    "extends": "../../package.json"
+  }
+}

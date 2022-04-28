@@ -1,0 +1,29 @@
+{
+  "name": "config",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "sideEffects": false,
+  "files": [
+    "eslint.config.js",
+    "jest.config.js",
+    "jest.setup.js",
+    "prettier.config.js",
+    "stylelint.config.js"
+  ],
+  "dependencies": {
+    "@emotion/eslint-plugin": "^11.7.0",
+    "@giotramu/stylelint-config": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "eslint-config-next": "^12.1.5",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-markdown": "^2.2.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-sort-destructure-keys": "^1.4.0",
+    "eslint-plugin-typescript-sort-keys": "^2.1.0",
+    "postcss-jsx": "^0.36.4"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}
