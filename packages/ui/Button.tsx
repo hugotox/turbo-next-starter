@@ -1,8 +1,10 @@
-import { css } from '@emotion/react'
+import { css, Theme } from '@emotion/react'
 
-const styl = css`
+const styl = ({ colors }: Theme) => css`
+  padding: 10px 20px;
   border: 0;
   border-radius: 6px;
+  color: ${colors.blue['300']};
   background: lightcoral;
 `
 
