@@ -1,4 +1,4 @@
-# Turborepo / Next.JS / Redux / ChakraUI / Storybook starter
+# Turborepo / Next.JS / Apollo / Redux / ChakraUI / Storybook starter
 
 This is an official Yarn v1 starter turborepo.
 
