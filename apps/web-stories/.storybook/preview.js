@@ -14,6 +14,8 @@ Object.defineProperty(NextImage, 'default', {
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
+
+  // https://github.com/chakra-ui/chakra-ui/issues/2694#issuecomment-1005198077
   chakra: {
     theme,
   },

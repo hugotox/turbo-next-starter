@@ -1,4 +1,4 @@
-# Turborepo starter
+# Turborepo / Next.JS / Redux / ChakraUI / Storybook starter
 
 This is an official Yarn v1 starter turborepo.
 
@@ -8,11 +8,12 @@ This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package ma
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `web`: a [Next.js](https://nextjs.org) app with [Redux](https://redux.js.org/) and ChakraUI providers
+- `web-stories`: the [storybook](https://storybook.js.org/) for this repo
+- `config`: `eslint`, `stylelint`, `prettier` and `jest` configurations
+- `theme`: a [ChakraUI](https://chakra-ui.com/) theme
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `ui`: a stub React component library used by `web` application
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
@@ -44,6 +45,13 @@ To develop all apps and packages, run the following command:
 ```
 cd my-turborepo
 yarn run dev
+```
+
+### Run the storybook
+
+```
+cd my-turborepo
+yarn storybook
 ```
 
 ### Remote Caching

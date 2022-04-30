@@ -12,10 +12,14 @@ module.exports = {
     "@chakra-ui/storybook-addon"
   ],
   framework: "@storybook/react",
+
+  // https://github.com/emotion-js/emotion/issues/1306#issuecomment-920695390
   babel: async (options) => ({
     ...options,
     presets: [...options.presets, '@emotion/babel-preset-css-prop'],
   }),
+
+  // https://github.com/storybookjs/storybook/issues/16690#issuecomment-971579785
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.mjs$/,
