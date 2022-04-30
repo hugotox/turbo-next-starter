@@ -1,0 +1,38 @@
+{
+  "name": "web-stories",
+  "version": "0.0.0",
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
+    "react-redux": "^8.0.1",
+    "theme": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@chakra-ui/storybook-addon": "^1.0.3",
+    "@emotion/babel-preset-css-prop": "^11.2.0",
+    "@mdx-js/react": "^1.6.22",
+    "@storybook/addon-a11y": "^6.4.19",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-docs": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/addons": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
+    "@storybook/theming": "^6.4.19",
+    "babel-loader": "^8.2.3",
+    "sb": "^6.4.19",
+    "tsconfig": "*",
+    "typescript": "^4.6.3"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}

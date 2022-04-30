@@ -10,6 +10,7 @@
     "theme": "*"
   },
   "devDependencies": {
+    "@storybook/react": "*",
     "@types/react": "^18.0.8",
     "@types/react-dom": "^18.0.0",
     "config": "*",
