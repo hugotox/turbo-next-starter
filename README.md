@@ -8,6 +8,7 @@ This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package ma
 
 ### Apps and Packages
 
+- `api-server`: an [Apollo Server](https://www.apollographql.com/docs/apollo-server/) app used as the web app's API
 - `web`: a [Next.js](https://nextjs.org) app with [Redux](https://redux.js.org/) and ChakraUI providers
 - `web-stories`: the [storybook](https://storybook.js.org/) for this repo
 - `config`: `eslint`, `stylelint`, `prettier` and `jest` configurations
