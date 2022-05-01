@@ -10,7 +10,7 @@ import { useMemo } from 'react'
 
 export const APOLLO_STATE_PROP_NAME = '__APOLLO_STATE__'
 
-const NEXT_PUBLIC_SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL
+const NEXT_PUBLIC_APP_URL = process.env.NEXT_PUBLIC_APP_URL
 
 let apolloClient: ApolloClient<NormalizedCacheObject>
 
@@ -37,7 +37,7 @@ function createApolloClient() {
 // see https://nextjs.org/docs/api-reference/next.config.js/runtime-configuration
 function getApolloServerURL() {
   // server side, or client-side with URL set at build time
-  return NEXT_PUBLIC_SERVER_URL
+  return `${NEXT_PUBLIC_APP_URL}/api/server`
 }
 
 export function initializeApollo(initialState = null) {
