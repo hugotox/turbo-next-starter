@@ -9,14 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@apollo/client": "^3.6.1",
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@reduxjs/toolkit": "^1.8.1",
-    "api-server": "*",
+    "fauna-client": "*",
     "framer-motion": "^6",
-    "graphql": "^15",
     "next": "12.1.5",
     "next-redux-wrapper": "^7.0.5",
     "react": "17.0.2",

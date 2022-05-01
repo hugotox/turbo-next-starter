@@ -1,13 +1,14 @@
 {
-  "name": "api-server",
+  "name": "fauna-client",
   "version": "0.0.0",
   "private": true,
   "main": "./index.tsx",
   "types": "./index.tsx",
   "dependencies": {
-    "@saeris/apollo-server-vercel": "^1.0.1",
-    "apollo-server": "^3.6.7",
-    "graphql": "^15"
+    "dotenv": "^16.0.0",
+    "faunadb": "^4.5.4",
+    "graphql": "^15",
+    "graphql-request": "^4.2.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.29",

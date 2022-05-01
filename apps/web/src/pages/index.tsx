@@ -1,30 +1,18 @@
-import { gql, useQuery } from '@apollo/client'
+import { listGuestbookEntries } from 'fauna-client'
 import { Button } from 'ui'
 
-import { addApolloState, initializeApollo } from '../lib/apollo-client'
-
-const query = gql`
-  {
-    hello
-  }
-`
-
-export default function Web() {
-  const { data } = useQuery(query)
-
+export default function Web({ initialEntries }: any) {
   return (
     <div>
-      <h1>API data: {JSON.stringify(data)}</h1>
       <Button />
+      <pre>{JSON.stringify(initialEntries, null, 2)}</pre>
     </div>
   )
 }
 
-export async function getServerSideProps() {
-  const apolloClient = initializeApollo()
-
-  await apolloClient.query({ query })
-  return addApolloState(apolloClient, {
-    props: {},
-  })
-}
+export const getStaticProps = async () => ({
+  props: {
+    initialEntries: await listGuestbookEntries(),
+  },
+  revalidate: 1,
+})
