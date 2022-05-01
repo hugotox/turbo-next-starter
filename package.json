@@ -11,6 +11,7 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "build-storybook": "turbo run build-storybook",
     "storybook": "turbo run storybook"
   },
   "devDependencies": {
