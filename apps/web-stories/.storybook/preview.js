@@ -1,7 +1,7 @@
-
-import { theme } from 'theme'
+import React from 'react'
+import { Global } from '@emotion/react'
+import { theme, globalStyle } from 'theme'
 import * as NextImage from 'next/image'
-import './global.css'
 
 const OriginalNextImage = NextImage.default
 
@@ -27,3 +27,11 @@ export const parameters = {
   },
 }
 
+export const decorators = [
+  (Story) => (
+    <React.Fragment>
+      <Global styles={globalStyle} />
+      <Story />
+    </React.Fragment>
+  ),
+]

@@ -7,6 +7,10 @@ export const theme = extendTheme(
         500: 'blue',
       },
     },
+    fonts: {
+      body: 'Arial, sans-serif',
+      heading: 'Open Sans, sans-serif',
+    },
   },
   withDefaultColorScheme({ colorScheme: 'blue' })
 )

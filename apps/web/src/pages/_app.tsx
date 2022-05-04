@@ -2,9 +2,8 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import { theme } from 'theme'
+import { theme, globalStyle } from 'theme'
 
-import { globalStyle } from '../globalStyle'
 import { wrapper } from '../lib/store'
 
 function App({ Component, pageProps }: AppProps) {

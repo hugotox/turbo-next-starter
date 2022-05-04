@@ -1,16 +1,11 @@
-import { css } from '@emotion/react'
 import { Meta, Story } from '@storybook/react'
 
 import { Button } from '../src'
 
 const ComponentName: Meta = {
-  title: 'Button Stories',
   component: Button,
+  title: 'Button Stories',
 }
-
-const style = css`
-  color: red;
-`
 
 const Template: Story = () => {
   return (

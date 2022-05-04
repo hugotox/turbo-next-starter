@@ -17434,8 +17434,10 @@ turbo@latest:
   resolution: "web-stories@workspace:apps/web-stories"
   dependencies:
     "@babel/core": ^7.17.5
+    "@chakra-ui/react": ^1.8.8
     "@chakra-ui/storybook-addon": ^1.0.3
     "@emotion/babel-preset-css-prop": ^11.2.0
+    "@emotion/react": ^11
     "@mdx-js/react": ^1.6.22
     "@reduxjs/toolkit": ^1.8.1
     "@storybook/addon-a11y": ^6.4.19

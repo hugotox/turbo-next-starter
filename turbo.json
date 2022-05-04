@@ -11,7 +11,10 @@
     "dev": {
       "cache": false
     },
-    "storybook": {},
+    "start": {},
+    "storybook": {
+      "cache": false
+    },
     "build-storybook": {}
   }
 }
