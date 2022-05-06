@@ -1,6 +1,6 @@
 import { css, Theme } from '@emotion/react'
+import { theme } from '@hugotox/theme'
 import { Meta, Story } from '@storybook/react'
-import { theme } from 'theme'
 
 const colors: any = (theme as Theme).colors
 
