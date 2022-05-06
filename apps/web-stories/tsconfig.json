@@ -2,7 +2,7 @@
   "exclude": [
     "node_modules"
   ],
-  "extends": "tsconfig/react-library.json",
+  "extends": "@hugotox/tsconfig/react-library.json",
   "include": [
     "emotion.d.ts",
     "stories"

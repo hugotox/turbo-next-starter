@@ -1,8 +1,8 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
+import { theme, globalStyle } from '@hugotox/theme'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import { theme, globalStyle } from 'theme'
 
 import { wrapper } from '../lib/store'
 

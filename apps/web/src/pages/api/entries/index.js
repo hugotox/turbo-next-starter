@@ -1,4 +1,4 @@
-import { listGuestbookEntries } from 'fauna-client'
+import { listGuestbookEntries } from '@hugotox/fauna-client'
 
 export default async function handler(req, res) {
   const handlers = {

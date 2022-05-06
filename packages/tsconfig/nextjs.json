@@ -27,6 +27,7 @@
   "extends": "./base.json",
   "include": [
     "src",
+    "test",
     "next-env.d.ts"
   ]
 }

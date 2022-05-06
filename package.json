@@ -1,5 +1,5 @@
 {
-  "name": "turborepo-basic-shared",
+  "name": "@hugotox/turbo-next-starter",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -9,9 +9,12 @@
   "scripts": {
     "build": "turbo run build",
     "start": "turbo run start",
-    "dev": "turbo run dev --parallel",
+    "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint:css": "turbo run lint:css",
+    "format": "turbo run format",
+    "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
     "build-storybook": "turbo run build-storybook",
     "storybook": "turbo run storybook"
   },

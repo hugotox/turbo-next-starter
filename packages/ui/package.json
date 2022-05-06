@@ -1,22 +1,33 @@
 {
-  "name": "ui",
+  "name": "@hugotox/ui",
   "version": "0.0.0",
   "main": "./index.tsx",
   "types": "./index.tsx",
   "license": "MIT",
   "sideEffects": false,
+  "scripts": {
+    "lint": "eslint \"**/*.{md,mjs,js,jsx,ts,tsx}\" --cache --quiet",
+    "format": "yarn lint --fix && yarn lint:css --fix",
+    "lint:css": "stylelint ./src/**/*.{js,jsx,ts,tsx}",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
   "dependencies": {
     "@emotion/react": "^11",
-    "theme": "*"
+    "@hugotox/theme": "*"
   },
   "devDependencies": {
+    "@hugotox/config": "*",
+    "@hugotox/tsconfig": "*",
     "@storybook/react": "*",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^12",
     "@types/react": "^18.0.8",
     "@types/react-dom": "^18.0.0",
-    "config": "*",
     "eslint": "^7.32.0",
+    "jest": "^28.0.3",
+    "jest-environment-jsdom": "^28.0.2",
     "stylelint": "^14.8.0",
-    "tsconfig": "*",
     "typescript": "^4.5.3"
   },
   "volta": {

@@ -1,5 +1,5 @@
 {
-  "name": "config",
+  "name": "@hugotox/config",
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -14,6 +14,7 @@
   "dependencies": {
     "@emotion/eslint-plugin": "^11.7.0",
     "@giotramu/stylelint-config": "^10.0.0",
+    "@testing-library/jest-dom": "^5.16.4",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "eslint-config-next": "^12.1.5",
     "eslint-config-prettier": "^8.5.0",

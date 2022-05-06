@@ -1,9 +1,13 @@
 {
-  "name": "fauna-client",
+  "name": "@hugotox/fauna-client",
   "version": "0.0.0",
   "private": true,
   "main": "./index.tsx",
   "types": "./index.tsx",
+  "scripts": {
+    "lint": "eslint \"**/*.{md,mjs,js,jsx,ts,tsx}\" --cache --quiet",
+    "format": "yarn lint --fix"
+  },
   "dependencies": {
     "dotenv": "^16.0.0",
     "faunadb": "^4.5.4",
@@ -11,10 +15,10 @@
     "graphql-request": "^4.2.0"
   },
   "devDependencies": {
+    "@hugotox/config": "*",
+    "@hugotox/tsconfig": "*",
     "@types/node": "^17.0.29",
-    "config": "*",
     "eslint": "^7.32.0",
-    "tsconfig": "*",
     "typescript": "^4.6.3"
   },
   "volta": {

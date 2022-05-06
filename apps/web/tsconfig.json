@@ -2,7 +2,7 @@
   "exclude": [
     "node_modules"
   ],
-  "extends": "tsconfig/nextjs.json",
+  "extends": "@hugotox/tsconfig/nextjs.json",
   "include": [
     "declaration.d.ts",
     "next-env.d.ts",

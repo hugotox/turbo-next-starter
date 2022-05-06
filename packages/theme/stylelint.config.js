@@ -1,1 +1,1 @@
-module.exports = require('config/stylelint.config')
+module.exports = require('@hugotox/config/stylelint.config')

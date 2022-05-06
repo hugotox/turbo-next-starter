@@ -1,5 +1,5 @@
 {
-  "name": "theme",
+  "name": "@hugotox/theme",
   "version": "0.0.0",
   "main": "./index.tsx",
   "types": "./index.tsx",
@@ -10,10 +10,10 @@
     "@emotion/react": "^11"
   },
   "devDependencies": {
+    "@hugotox/config": "*",
+    "@hugotox/tsconfig": "*",
     "@types/react": "^18.0.8",
     "@types/react-dom": "^18.0.0",
-    "config": "*",
-    "tsconfig": "*",
     "typescript": "^4.5.3"
   },
   "volta": {

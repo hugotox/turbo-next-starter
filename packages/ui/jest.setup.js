@@ -1,1 +1,1 @@
-module.exports = require('config/jest.setup')
+module.exports = require('@hugotox/config/jest.setup')

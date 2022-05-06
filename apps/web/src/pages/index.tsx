@@ -1,6 +1,6 @@
 import { Heading } from '@chakra-ui/react'
-import { listGuestbookEntries } from 'fauna-client'
-import { Button } from 'ui'
+import { listGuestbookEntries } from '@hugotox/fauna-client'
+import { Button } from '@hugotox/ui'
 
 export default function Web({ initialEntries }: any) {
   return (
