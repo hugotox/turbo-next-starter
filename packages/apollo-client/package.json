@@ -1,5 +1,5 @@
 {
-  "name": "ui",
+  "name": "apollo-client",
   "version": "0.0.0",
   "main": "./index.tsx",
   "types": "./index.tsx",
@@ -13,19 +13,15 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
-    "@emotion/react": "^11",
-    "theme": "*"
+    "@apollo/client": "^3.6.2",
+    "deepmerge": "^4.2.2",
+    "lodash": "^4.17.21",
+    "react": "17.0.2"
   },
   "devDependencies": {
-    "@storybook/react": "*",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^12",
-    "@types/react": "^18.0.8",
-    "@types/react-dom": "^18.0.0",
     "config": "*",
     "eslint": "^7.32.0",
     "jest": "^28.0.3",
-    "jest-environment-jsdom": "^28.0.2",
     "stylelint": "^14.8.0",
     "tsconfig": "*",
     "typescript": "^4.5.3"

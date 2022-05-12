@@ -1,6 +1,6 @@
 import React from 'react'
 import { Global } from '@emotion/react'
-import { theme, globalStyle } from '@hugotox/theme'
+import { theme, globalStyle } from 'theme'
 import * as NextImage from 'next/image'
 
 const OriginalNextImage = NextImage.default

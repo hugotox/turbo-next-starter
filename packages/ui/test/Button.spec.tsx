@@ -1,6 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react'
-import { theme } from '@hugotox/theme'
 import { render } from '@testing-library/react'
+import { theme } from 'theme'
 
 import { Button } from '../src/Button'
 

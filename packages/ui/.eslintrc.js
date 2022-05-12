@@ -1,1 +1,1 @@
-module.exports = require('@hugotox/config/eslint.config')
+module.exports = require('config/eslint.config')

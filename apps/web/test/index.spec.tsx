@@ -1,5 +1,5 @@
 import { ChakraProvider } from '@chakra-ui/react'
-import { theme } from '@hugotox/theme'
+import { theme } from 'theme'
 import { render } from '@testing-library/react'
 
 import Index from '../src/pages/index'

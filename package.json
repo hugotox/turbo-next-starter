@@ -1,5 +1,5 @@
 {
-  "name": "@hugotox/turbo-next-starter",
+  "name": "turbo-next-starter",
   "version": "0.0.0",
   "private": true,
   "workspaces": [

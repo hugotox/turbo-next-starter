@@ -1,4 +1,8 @@
-const withTM = require("next-transpile-modules")(["@hugotox/theme", "@hugotox/ui"]);
+const withTM = require("next-transpile-modules")([
+  "apollo-client",
+  "theme", 
+  "ui"
+]);
 
 module.exports = withTM({
   reactStrictMode: true,

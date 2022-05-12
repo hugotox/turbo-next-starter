@@ -1,4 +1,4 @@
-module.exports = require('@hugotox/config/jest.config')({
+module.exports = require('config/jest.config')({
   coverageThreshold: {
     global: {
       branches: 80,

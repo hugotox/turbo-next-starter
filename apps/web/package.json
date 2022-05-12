@@ -1,5 +1,5 @@
 {
-  "name": "@hugotox/web",
+  "name": "web",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -13,33 +13,34 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.2",
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
-    "@hugotox/fauna-client": "*",
-    "@hugotox/theme": "*",
-    "@hugotox/ui": "*",
     "@reduxjs/toolkit": "^1.8.1",
+    "apollo-client": "*",
     "framer-motion": "^6",
     "next": "12.1.5",
     "next-redux-wrapper": "^7.0.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-redux": "^8.0.1"
+    "react-redux": "^8.0.1",
+    "theme": "*",
+    "ui": "*"
   },
   "devDependencies": {
-    "@hugotox/config": "*",
-    "@hugotox/tsconfig": "*",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12",
     "@types/node": "^17.0.29",
     "@types/react": "^18.0.8",
     "@types/react-dom": "^18.0.0",
+    "config": "*",
     "eslint": "^7.32.0",
     "jest": "^28.0.3",
     "jest-environment-jsdom": "^28.0.2",
     "next-transpile-modules": "^9.0.0",
     "stylelint": "^14.8.0",
+    "tsconfig": "*",
     "typescript": "^4.6.3"
   },
   "volta": {
