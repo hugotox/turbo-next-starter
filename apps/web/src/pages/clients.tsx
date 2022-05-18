@@ -1,31 +1,36 @@
 import { gql, useQuery } from '@apollo/client'
 import { Heading } from '@chakra-ui/react'
 import { addApolloState, initializeApollo } from 'apollo-client'
-import { Button } from 'ui'
 
 const query = gql`
-  query Entries($size: Int) {
-    entries(_size: $size) {
+  {
+    clients {
       data {
-        _id
-        _ts
-        name
-        message
-        createdAt
+        firstName
+        lastName
+        email
       }
     }
   }
 `
 
-export default function Web() {
+export default function Clients() {
   const { data } = useQuery(query)
+
   return (
     <div>
-      <Heading as="h1" size="4xl" css={{}}>
-        Turbo Next Starter
+      <Heading as="h1" size="lg">
+        Clients
       </Heading>
-      <Button />
-      <pre>{JSON.stringify(data.entries?.data ?? [], null, 2)}</pre>
+      {data?.clients?.data?.map?.(({ email, firstName, lastName }: any) => {
+        return (
+          <div key={email}>
+            First Name: {firstName} <br />
+            Last Name: {lastName} <br />
+            Email: {email} <br />
+          </div>
+        )
+      })}
     </div>
   )
 }

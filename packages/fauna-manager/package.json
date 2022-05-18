@@ -1,0 +1,30 @@
+{
+  "name": "fauna-manager",
+  "version": "0.0.0",
+  "main": "./index.js",
+  "types": "./index.js",
+  "license": "MIT",
+  "sideEffects": false,
+  "scripts": {
+    "lint": "eslint \"**/*.{md,mjs,js,jsx,ts,tsx}\" --cache --quiet",
+    "format": "yarn lint --fix && yarn lint:css --fix",
+    "import-schema": "env-cmd -f .env.local node scripts/importSchema.js",
+    "generate-migration": "fauna-schema-migrate generate",
+    "apply-migration": "env-cmd -f .env.local fauna-schema-migrate apply",
+    "rollback-migration": "env-cmd -f .env.local fauna-schema-migrate rollback"
+  },
+  "devDependencies": {
+    "@fauna-labs/fauna-schema-migrate": "^2.2.1",
+    "config": "*",
+    "env-cmd": "^10.1.0",
+    "eslint": "^7.32.0",
+    "faunadb": "^4.5.4",
+    "jest": "^28.0.3",
+    "request": "^2.88.2",
+    "stream-to-promise": "^3.0.0",
+    "stylelint": "^14.8.0"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}
