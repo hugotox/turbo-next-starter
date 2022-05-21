@@ -163,10 +163,6 @@ export const globalStyle = css`
     text-transform: none;
   }
 
-  a {
-    text-decoration: none;
-  }
-
   /**
   Correct the inability to style clickable types in iOS and Safari.
   */

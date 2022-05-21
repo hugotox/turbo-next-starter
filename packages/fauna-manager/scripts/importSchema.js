@@ -11,7 +11,7 @@ const importSchema = () =>
           Authorization: `Bearer ${process.env.FAUNA_ADMIN_KEY}`,
         },
         model: 'merge',
-        uri: 'https://graphql.us.fauna.com/import',
+        uri: 'https://graphql.fauna.com/import',
       })
     )
   ).then(String)
