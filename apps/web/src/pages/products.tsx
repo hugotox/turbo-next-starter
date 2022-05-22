@@ -1,25 +1,18 @@
-import { gql, useQuery } from '@apollo/client'
 import { Heading } from '@chakra-ui/react'
-import { addApolloState, initializeApollo } from 'apollo-client'
+import { useEffect, useState } from 'react'
 import { Button } from 'ui'
 
-const query = gql`
-  query Products {
-    allProducts {
-      data {
-        name
-        quantity
-        backorderLimit
-        description
-        price
-        backordered
-      }
-    }
-  }
-`
-
 export default function Products() {
-  const { data } = useQuery(query)
+  const [data, setData] = useState({})
+
+  useEffect(() => {
+    const loadProducts = async () => {
+      const response = await fetch('/api/products')
+      const data = await response.json()
+      setData(data)
+    }
+    loadProducts()
+  }, [])
   return (
     <div>
       <Heading as="h1" css={{}} size="4xl">
@@ -29,25 +22,4 @@ export default function Products() {
       <pre>{JSON.stringify(data, null, 2)}</pre>
     </div>
   )
-}
-
-// export const getStaticProps = async () => {
-//   const apolloClient = initializeApollo()
-//   await apolloClient.query({
-//     query,
-//   })
-//   return addApolloState(apolloClient, {
-//     props: {},
-//     revalidate: 10,
-//   })
-// }
-
-export const getServerSideProps = async () => {
-  const apolloClient = initializeApollo()
-  await apolloClient.query({
-    query,
-  })
-  return addApolloState(apolloClient, {
-    props: {},
-  })
 }
