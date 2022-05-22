@@ -24,7 +24,7 @@ export default function Login() {
   return (
     <>
       Not signed in <br />
-      <button onClick={() => signIn('google')}>Sign in</button>
+      <button onClick={() => signIn()}>Sign in</button>
     </>
   )
 }
