@@ -24,6 +24,10 @@ export default function Web() {
           </NextLink>
         </li>
       </ul>
+      <br />
+      <NextLink href="/login" passHref>
+        <Link>Login page</Link>
+      </NextLink>
     </div>
   )
 }

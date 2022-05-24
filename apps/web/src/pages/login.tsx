@@ -1,30 +1,33 @@
 /* eslint-disable @next/next/no-img-element */
+import { useUser } from '@auth0/nextjs-auth0'
 import { NextPageContext } from 'next'
-import { useSession, signIn, signOut, getSession } from 'next-auth/react'
 
 export default function Login() {
-  const { data: session } = useSession()
-  if (session) {
+  const { error, isLoading, user } = useUser()
+  if (user) {
     return (
       <>
-        Signed in as {session?.user?.email} <br />
-        {session?.user?.image && (
+        Signed in as {user.email} <br />
+        {user?.picture && (
           <img
             alt=""
             height={80}
-            src={session.user.image}
+            src={String(user.picture)}
             style={{ borderRadius: '50%', overflow: 'hidden' }}
             width={80}
           />
         )}
-        <button onClick={() => signOut()}>Sign out</button>
+        <a href="/api/auth/logout">Logout</a>
+        <br />
+        Session data:
+        <pre>{JSON.stringify(user, null, 2)}</pre>
       </>
     )
   }
   return (
     <>
       Not signed in <br />
-      <button onClick={() => signIn('auth0')}>Sign in</button>
+      <a href="/api/auth/login">Login</a>
     </>
   )
 }
@@ -33,7 +36,7 @@ export default function Login() {
 export async function getServerSideProps(context: NextPageContext) {
   return {
     props: {
-      session: await getSession(context),
+      // session: await getSession(context),
     },
   }
 }
