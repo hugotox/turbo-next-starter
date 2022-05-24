@@ -1,6 +1,8 @@
 import { gql, useQuery } from '@apollo/client'
+import { getServerSidePropsWrapper, getSession, getAccessToken } from '@auth0/nextjs-auth0'
 import { Heading } from '@chakra-ui/react'
 import { addApolloState, initializeApollo } from 'apollo-client'
+import { GetServerSideProps } from 'next'
 import { Button } from 'ui'
 
 const query = gql`
@@ -31,12 +33,26 @@ export default function Products() {
   )
 }
 
-export const getServerSideProps = async () => {
-  const apolloClient = initializeApollo()
-  await apolloClient.query({
-    query,
-  })
-  return addApolloState(apolloClient, {
-    props: {},
-  })
-}
+export const getServerSideProps: GetServerSideProps = getServerSidePropsWrapper(
+  async ({ req, res }) => {
+    const session = getSession(req, res)
+    if (session) {
+      // User is authenticated
+      const { accessToken } = await getAccessToken(req, res)
+      if (accessToken) {
+        const apolloClient = initializeApollo({ accessToken })
+        try {
+          await apolloClient.query({
+            query,
+          })
+        } catch {}
+        return addApolloState(apolloClient, {
+          props: {},
+        })
+      }
+    }
+    return {
+      props: {},
+    }
+  }
+)

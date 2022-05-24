@@ -18,11 +18,6 @@ export default function Web() {
             <Link>Products (server side)</Link>
           </NextLink>
         </li>
-        <li>
-          <NextLink href="/products-static" passHref>
-            <Link>Products (static)</Link>
-          </NextLink>
-        </li>
       </ul>
       <br />
       <NextLink href="/login" passHref>

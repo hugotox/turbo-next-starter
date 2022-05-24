@@ -6,8 +6,13 @@ import { createApolloClient } from './createApolloClient'
 
 let apolloClient: ApolloClient<NormalizedCacheObject>
 
-export function initializeApollo(initialState = null) {
-  const _apolloClient = apolloClient ?? createApolloClient()
+export interface InitializeApolloProps {
+  accessToken: string
+  initialState?: any | null
+}
+
+export function initializeApollo({ accessToken, initialState = null }: InitializeApolloProps) {
+  const _apolloClient = apolloClient ?? createApolloClient(accessToken)
 
   // If your page has Next.js data fetching methods that use Apollo Client, the initial state
   // gets hydrated here
