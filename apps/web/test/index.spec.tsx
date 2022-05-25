@@ -1,16 +1,10 @@
-import { ChakraProvider } from '@chakra-ui/react'
-import { theme } from 'theme'
-import { render } from '@testing-library/react'
+import { renderWithProviders } from 'utils'
 
 import Index from '../src/pages/index'
 
 describe('index', () => {
   it('renders', () => {
-    const { getByText } = render(
-      <ChakraProvider theme={theme}>
-        <Index />
-      </ChakraProvider>
-    )
+    const { getByText } = renderWithProviders(<Index />)
     expect(getByText('Turbo Next Starter')).toBeInTheDocument()
   })
 })
