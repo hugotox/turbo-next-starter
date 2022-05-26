@@ -1,10 +1,14 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
 import { createWrapper } from 'next-redux-wrapper'
+import { MySlice } from 'ui'
+
+import { AppSlice } from './appSlice'
 
 export const makeStore = () =>
   configureStore({
     reducer: {
-      root: () => ({}),
+      [AppSlice.name]: AppSlice.reducer,
+      [MySlice.name]: MySlice.reducer,
     },
   })
 

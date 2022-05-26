@@ -19512,6 +19512,7 @@ turbo@latest:
   resolution: "ui@workspace:packages/ui"
   dependencies:
     "@emotion/react": ^11
+    "@reduxjs/toolkit": ^1.8.1
     "@storybook/react": "*"
     "@testing-library/jest-dom": ^5.16.4
     "@testing-library/react": ^12

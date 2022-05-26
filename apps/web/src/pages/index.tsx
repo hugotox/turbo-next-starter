@@ -1,7 +1,11 @@
 import { Heading, Link } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import { MyForm } from 'ui'
+
+import { useAppSelector } from '../lib/store'
 
 export default function Web() {
+  const appVersion = useAppSelector((state) => state.app.version)
   return (
     <div>
       <Heading as="h1" css={{}} size="4xl">
@@ -23,6 +27,8 @@ export default function Web() {
       <NextLink href="/login" passHref>
         <Link>Login page</Link>
       </NextLink>
+      <br />
+      <MyForm version={appVersion} />
     </div>
   )
 }
