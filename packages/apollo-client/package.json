@@ -15,8 +15,7 @@
   "dependencies": {
     "@apollo/client": "^3.6.2",
     "deepmerge": "^4.2.2",
-    "lodash": "^4.17.21",
-    "react": "17.0.2"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "config": "*",

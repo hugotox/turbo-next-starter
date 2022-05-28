@@ -12,6 +12,9 @@
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
+  "peerDependencies": {
+    "react": "*"
+  },
   "dependencies": {
     "@emotion/react": "^11",
     "theme": "*",
