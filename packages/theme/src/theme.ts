@@ -3,6 +3,12 @@ import { extendTheme, withDefaultColorScheme, Theme as ChakraTheme } from '@chak
 
 import * as breakpoints from './breakpoints'
 
+export type ColorNames = keyof ChakraTheme['colors']
+
+export interface Theme extends ChakraTheme {}
+
+export const COLOR_SCHEME: ColorNames = 'blue'
+
 export const theme = extendTheme(
   {
     breakpoints: {
@@ -16,13 +22,15 @@ export const theme = extendTheme(
       // override colors here
     },
     fonts: {
-      body: '"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif',
-      heading:
-        '"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;',
+      body: '"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif',
+      heading: '"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;',
       mono: "ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace",
     },
+    shadows: {
+      outline: '0 0 0 3px var(--chakra-colors-gray-300)',
+    },
+    initialColorMode: 'dark',
+    useSystemColorMode: true,
   },
-  withDefaultColorScheme({ colorScheme: 'green' })
+  withDefaultColorScheme({ colorScheme: COLOR_SCHEME })
 )
-
-export interface Theme extends ChakraTheme {}

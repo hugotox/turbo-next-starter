@@ -7,7 +7,7 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { theme, globalStyle } from 'theme'
 
-import { wrapper } from '../lib/store'
+import { wrapper } from '../redux-store'
 
 function App({ Component, pageProps }: AppProps) {
   const apolloClient = useApollo(pageProps)

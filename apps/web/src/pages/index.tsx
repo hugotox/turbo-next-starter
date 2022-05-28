@@ -1,11 +1,11 @@
-import { Heading, Link } from '@chakra-ui/react'
+import { Button, Heading, Link, useColorMode } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import { MyForm } from 'ui'
 
-import { useAppSelector } from '../lib/store'
+import { useAppSelector } from '../redux-store'
 
 export default function Web() {
   const appVersion = useAppSelector((state) => state.app.version)
+  const { colorMode, toggleColorMode } = useColorMode()
   return (
     <div>
       <Heading as="h1" css={{}} size="4xl">
@@ -27,8 +27,9 @@ export default function Web() {
       <NextLink href="/login" passHref>
         <Link>Login page</Link>
       </NextLink>
+      <pre>App version: {appVersion}</pre>
       <br />
-      <MyForm version={appVersion} />
+      <Button onClick={toggleColorMode}>Toggle {colorMode === 'light' ? 'Dark' : 'Light'}</Button>
     </div>
   )
 }
