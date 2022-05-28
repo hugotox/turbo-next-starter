@@ -11,6 +11,7 @@ export default function Web() {
       <Heading as="h1" css={{}} size="4xl">
         Turbo Next Starter
       </Heading>
+      <h2>Regular H2</h2>
       <ul>
         <li>
           <NextLink href="/products" passHref>

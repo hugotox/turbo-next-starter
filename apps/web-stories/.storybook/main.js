@@ -11,6 +11,9 @@ module.exports = {
     "@storybook/addon-interactions",
     "@chakra-ui/storybook-addon"
   ],
+  features: {
+    emotionAlias: false,
+  },
   framework: "@storybook/react",
 
   // https://github.com/emotion-js/emotion/issues/1306#issuecomment-920695390

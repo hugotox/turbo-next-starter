@@ -6,7 +6,7 @@
   "license": "MIT",
   "sideEffects": false,
   "dependencies": {
-    "@chakra-ui/react": "^1.8.8",
+    "@chakra-ui/react": "^2.1.2",
     "@emotion/react": "^11"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-import { Heading, Text } from '@chakra-ui/react'
+import { Heading, Text, Button } from '@chakra-ui/react'
 import { Meta, Story } from '@storybook/react'
 
 const TextStory: Meta = {
@@ -28,6 +28,8 @@ const Template: Story = () => {
         ante. Nam vitae eros sit amet purus rhoncus varius. Donec porttitor iaculis vulputate.
         Mauris non semper libero.
       </Text>
+      <br />
+      <Button>Chakra-UI is awesome!</Button>
     </div>
   )
 }

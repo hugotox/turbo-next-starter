@@ -1,8 +1,7 @@
 import React from 'react'
-import { Global } from '@emotion/react'
-import { theme, globalStyle } from 'theme'
+import { theme } from 'theme'
 import * as NextImage from 'next/image'
-import { ChakraProvider } from '@chakra-ui/react'
+
 
 const OriginalNextImage = NextImage.default
 
@@ -27,12 +26,3 @@ export const parameters = {
     },
   },
 }
-
-export const decorators = [
-  (Story) => (
-    <ChakraProvider theme={theme}>
-      <Global styles={globalStyle} />
-      <Story />
-    </ChakraProvider>
-  ),
-]
