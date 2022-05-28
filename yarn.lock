@@ -8383,6 +8383,7 @@ __metadata:
     eslint-plugin-markdown: ^2.2.1
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-sort-destructure-keys: ^1.4.0
+    eslint-plugin-sort-export-all: ^1.2.2
     eslint-plugin-typescript-sort-keys: ^2.1.0
     postcss-jsx: ^0.36.4
   languageName: unknown
@@ -9940,6 +9941,17 @@ __metadata:
   peerDependencies:
     eslint: 3 - 8
   checksum: 6ff004c1eb59f9902f5f64d8453c45ba550b8894450401c496da80eed0058cd52b9ad8a43a485f2638f5601c5d4a965a96d2f72a5f1d6d0f5255a26b4df6fe8f
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-sort-export-all@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "eslint-plugin-sort-export-all@npm:1.2.2"
+  dependencies:
+    natural-compare: ^1.4.0
+  peerDependencies:
+    eslint: ^4 || ^5 || ^6 || ^7 || ^8
+  checksum: efa8f473d369536a07c0b9c2b4da7f0a4cdd415cc6bebdabd17226e5fe82739e00d74f111b4aed862ef0d051ba3d5811f2af25f41074f416fcea32e40ca63f8f
   languageName: node
   linkType: hard
 

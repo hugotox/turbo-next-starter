@@ -21,6 +21,7 @@
     "eslint-plugin-markdown": "^2.2.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-sort-destructure-keys": "^1.4.0",
+    "eslint-plugin-sort-export-all": "^1.2.2",
     "eslint-plugin-typescript-sort-keys": "^2.1.0",
     "postcss-jsx": "^0.36.4"
   },

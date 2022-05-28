@@ -1,10 +1,10 @@
-import { css } from '@emotion/react'
+import { css, Theme } from '@emotion/react'
 
 /**
  * Based on https://github.com/sindresorhus/modern-normalize
  */
 
-export const globalStyle = css`
+export const globalStyle = ({ fontSizes, fonts }: Theme) => css`
   *,
   ::before,
   ::after {
@@ -15,9 +15,11 @@ export const globalStyle = css`
   1. Correct the line height in all browsers.
   2. Prevent adjustments of font size after orientation changes in iOS.
   3. Use a more readable tab size (opinionated).
+  4. Default rem size
   */
 
   html {
+    font-size: 16px; /* 4 */
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     -moz-tab-size: 3; /* 3 */
@@ -37,7 +39,17 @@ export const globalStyle = css`
   body {
     min-height: 100vh;
     margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: ${fonts.body};
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: ${fonts.heading};
+    letter-spacing: -0.5px;
   }
 
   /*
@@ -86,8 +98,8 @@ export const globalStyle = css`
   kbd,
   samp,
   pre {
-    font-size: 1em; /* 2 */
-    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; /* 1 */
+    font-size: ${fontSizes.sm}; /* 2 */
+    font-family: ${fonts.mono}; /* 1 */
   }
 
   /**

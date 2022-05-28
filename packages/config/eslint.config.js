@@ -7,7 +7,7 @@ module.exports = {
     'plugin:typescript-sort-keys/recommended',
     'plugin:markdown/recommended'
   ],
-  plugins: ['@typescript-eslint', '@emotion', 'sort-destructure-keys'],
+  plugins: ['@typescript-eslint', '@emotion', 'sort-destructure-keys', 'sort-export-all'],
   settings: {
     next: {
       rootDir: ['apps/*/', 'packages/*/'],
@@ -45,6 +45,7 @@ module.exports = {
         ],
       },
     ],
+    "sort-export-all/sort-export-all": "error",
     'react/jsx-sort-props': 'warn',
     'react/sort-prop-types': 'warn',
     'sort-destructure-keys/sort-destructure-keys': 2,
