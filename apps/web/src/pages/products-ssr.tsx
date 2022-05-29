@@ -1,8 +1,11 @@
 import { gql, useQuery } from '@apollo/client'
-import { getServerSidePropsWrapper, getSession, getAccessToken } from '@auth0/nextjs-auth0'
+import { getServerSidePropsWrapper, getSession } from '@auth0/nextjs-auth0'
 import { Heading } from '@chakra-ui/react'
 import { addApolloState, initializeApollo } from 'apollo-client'
 import { GetServerSideProps } from 'next'
+import Link from 'next/link'
+
+import { validateSession } from '../utils'
 
 const query = gql`
   query Products {
@@ -23,8 +26,8 @@ export default function Products() {
   const { data } = useQuery(query)
   return (
     <div>
-      <Heading as="h1" css={{}} size="4xl">
-        Turbo Next Starter
+      <Heading as="h1" size="4xl">
+        <Link href="/">Turbo Next Starter</Link>
       </Heading>
       <pre>{JSON.stringify(data, null, 2)}</pre>
     </div>
@@ -34,11 +37,10 @@ export default function Products() {
 export const getServerSideProps: GetServerSideProps = getServerSidePropsWrapper(
   async ({ req, res }) => {
     const session = getSession(req, res)
-    if (session) {
+    if (validateSession(session)) {
       // User is authenticated
-      const { accessToken } = await getAccessToken(req, res)
-      if (accessToken) {
-        const apolloClient = initializeApollo({ accessToken })
+      if (session?.accessToken) {
+        const apolloClient = initializeApollo({ accessToken: session.accessToken })
         try {
           await apolloClient.query({
             query,

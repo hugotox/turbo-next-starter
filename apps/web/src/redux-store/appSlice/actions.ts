@@ -1,3 +1,3 @@
 import { AppSlice } from './appSlice'
 
-export const { setIsBot } = AppSlice.actions
+export const { setAccessToken, setIsBot } = AppSlice.actions

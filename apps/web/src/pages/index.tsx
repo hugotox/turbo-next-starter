@@ -28,6 +28,7 @@ export default function Web() {
       <NextLink href="/login" passHref>
         <Link>Login page</Link>
       </NextLink>
+      <br />
       <Code>App version: {appVersion}</Code>
       <br />
       <Button onClick={toggleColorMode}>Toggle {colorMode === 'light' ? 'Dark' : 'Light'}</Button>

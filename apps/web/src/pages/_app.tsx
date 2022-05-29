@@ -5,12 +5,30 @@ import { Global } from '@emotion/react'
 import { useApollo } from 'apollo-client'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import { useEffect } from 'react'
 import { theme, globalStyle } from 'theme'
 
-import { wrapper } from '../redux-store'
+import { useAppDispatch, useAppSelector, wrapper } from '../redux-store'
+import { selectAccessToken, setAccessToken } from '../redux-store/appSlice'
 
 function App({ Component, pageProps }: AppProps) {
-  const apolloClient = useApollo(pageProps)
+  const dispatch = useAppDispatch()
+  const accessToken = useAppSelector(selectAccessToken)
+  const apolloClient = useApollo(pageProps, accessToken)
+
+  useEffect(() => {
+    const fetchToken = async () => {
+      try {
+        const resp = await fetch('/api/auth/access-token')
+        const data = await resp?.json()
+        if (data?.accessToken) {
+          dispatch(setAccessToken(data.accessToken))
+        }
+      } catch {}
+    }
+    fetchToken()
+  }, [dispatch])
+
   return (
     <UserProvider>
       <ApolloProvider client={apolloClient}>
