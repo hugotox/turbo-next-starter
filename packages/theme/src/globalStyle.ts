@@ -4,7 +4,7 @@ import { css, Theme } from '@emotion/react'
  * Based on https://github.com/sindresorhus/modern-normalize
  */
 
-export const globalStyle = ({ fontSizes, fonts }: Theme) => css`
+export const globalStyle = ({ fontSizes }: Theme) => css`
   *,
   ::before,
   ::after {
@@ -39,7 +39,6 @@ export const globalStyle = ({ fontSizes, fonts }: Theme) => css`
   body {
     min-height: 100vh;
     margin: 0;
-    font-family: ${fonts.body};
   }
 
   h1,
@@ -48,7 +47,6 @@ export const globalStyle = ({ fontSizes, fonts }: Theme) => css`
   h4,
   h5,
   h6 {
-    font-family: ${fonts.heading};
     letter-spacing: -0.5px;
   }
 
@@ -99,7 +97,6 @@ export const globalStyle = ({ fontSizes, fonts }: Theme) => css`
   samp,
   pre {
     font-size: ${fontSizes.sm}; /* 2 */
-    font-family: ${fonts.mono}; /* 1 */
   }
 
   /**

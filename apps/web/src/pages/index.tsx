@@ -1,4 +1,4 @@
-import { Button, Heading, Link, useColorMode } from '@chakra-ui/react'
+import { Button, Heading, Link, useColorMode, Code } from '@chakra-ui/react'
 import NextLink from 'next/link'
 
 import { useAppSelector } from '../redux-store'
@@ -28,7 +28,7 @@ export default function Web() {
       <NextLink href="/login" passHref>
         <Link>Login page</Link>
       </NextLink>
-      <pre>App version: {appVersion}</pre>
+      <Code>App version: {appVersion}</Code>
       <br />
       <Button onClick={toggleColorMode}>Toggle {colorMode === 'light' ? 'Dark' : 'Light'}</Button>
     </div>
