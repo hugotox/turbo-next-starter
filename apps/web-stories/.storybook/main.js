@@ -1,20 +1,15 @@
-const path = require('path')
-const toPath = _path => path.join(process.cwd(), _path)
-
 module.exports = {
-  stories: [
-    "../../../(packages|apps)/**/stories/**/*.stories.@(js|jsx|ts|tsx|mdx)",
-  ],
+  stories: ['../../../(packages|apps)/**/stories/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
   addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
-    "@chakra-ui/storybook-addon"
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
+    '@chakra-ui/storybook-addon',
   ],
   features: {
     emotionAlias: false,
   },
-  framework: "@storybook/react",
+  framework: '@storybook/react',
 
   // https://github.com/emotion-js/emotion/issues/1306#issuecomment-920695390
   babel: async (options) => ({
@@ -27,8 +22,8 @@ module.exports = {
     config.module.rules.push({
       test: /\.mjs$/,
       include: /node_modules/,
-      type: "javascript/auto",
+      type: 'javascript/auto',
     })
     return config
-  }
-};
+  },
+}

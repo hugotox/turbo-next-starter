@@ -2,7 +2,6 @@ import { gql, useQuery } from '@apollo/client'
 import { getAccessToken, getServerSidePropsWrapper, getSession } from '@auth0/nextjs-auth0'
 import { Heading } from '@chakra-ui/react'
 import { GetServerSideProps } from 'next'
-import { Button } from 'ui'
 
 const query = gql`
   query Products {
@@ -27,7 +26,6 @@ export default function Products() {
       <Heading as="h1" css={{}} size="4xl">
         Turbo Next Starter
       </Heading>
-      <Button />
       <pre>{JSON.stringify(data, null, 2)}</pre>
     </div>
   )

@@ -3,7 +3,6 @@ import { getServerSidePropsWrapper, getSession, getAccessToken } from '@auth0/ne
 import { Heading } from '@chakra-ui/react'
 import { addApolloState, initializeApollo } from 'apollo-client'
 import { GetServerSideProps } from 'next'
-import { Button } from 'ui'
 
 const query = gql`
   query Products {
@@ -27,7 +26,6 @@ export default function Products() {
       <Heading as="h1" css={{}} size="4xl">
         Turbo Next Starter
       </Heading>
-      <Button />
       <pre>{JSON.stringify(data, null, 2)}</pre>
     </div>
   )
