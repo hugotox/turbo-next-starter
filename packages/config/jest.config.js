@@ -1,6 +1,6 @@
 const nextJest = require('next/jest')
 
-const createJestConfig = nextJest({
+const createNextJestConfig = nextJest({
   // Provide the path to your Next.js app to load next.config.js and .env files in your test environment
   dir: './',
 })
@@ -23,6 +23,7 @@ const defaultConfig = {
 }
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
-module.exports = function(extraConfig = {}){
-  return createJestConfig({...defaultConfig, ...extraConfig})
+module.exports = function(extraConfig = {}, isNextApp=false){
+  const finalConfig = {...defaultConfig, ...extraConfig}
+  return isNextApp ? createNextJestConfig(finalConfig) : finalConfig
 }
