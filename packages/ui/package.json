@@ -17,14 +17,14 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^2.1.2",
-    "@emotion/react": "^11",
+    "@emotion/react": "^11.9.0",
     "theme": "*",
     "utils": "*"
   },
   "devDependencies": {
     "@storybook/react": "*",
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^12",
+    "@testing-library/react": "^13.3.0",
     "@types/react": "^18.0.8",
     "@types/react-dom": "^18.0.0",
     "config": "*",

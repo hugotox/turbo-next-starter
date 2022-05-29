@@ -2741,15 +2741,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/is-prop-valid@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "@emotion/is-prop-valid@npm:1.1.2"
-  dependencies:
-    "@emotion/memoize": ^0.7.4
-  checksum: 58b1f2d429a589f8f5bc2c33a8732cbb7bbcb17131a103511ef9a94ac754d7eeb53d627f947da480cd977f9d419fd92e244991680292f3287204159652745707
-  languageName: node
-  linkType: hard
-
 "@emotion/memoize@npm:0.7.4":
   version: 0.7.4
   resolution: "@emotion/memoize@npm:0.7.4"
@@ -2764,7 +2755,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/react@npm:^11":
+"@emotion/react@npm:^11.9.0":
   version: 11.9.0
   resolution: "@emotion/react@npm:11.9.0"
   dependencies:
@@ -2842,7 +2833,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/styled@npm:^10.0.27":
+"@emotion/styled@npm:^10.0.27, @emotion/styled@npm:^10.3.0":
   version: 10.3.0
   resolution: "@emotion/styled@npm:10.3.0"
   dependencies:
@@ -2852,28 +2843,6 @@ __metadata:
     "@emotion/core": ^10.0.27
     react: ">=16.3.0"
   checksum: 9d9609c008c009d8b9249fdbb2017a404b1fc6c9118c84ec9a916e86670d4c61f03fee24297ad10b460dab628ff8260066338617ee99ede3ae7969ce5995e9bc
-  languageName: node
-  linkType: hard
-
-"@emotion/styled@npm:^11":
-  version: 11.8.1
-  resolution: "@emotion/styled@npm:11.8.1"
-  dependencies:
-    "@babel/runtime": ^7.13.10
-    "@emotion/babel-plugin": ^11.7.1
-    "@emotion/is-prop-valid": ^1.1.2
-    "@emotion/serialize": ^1.0.2
-    "@emotion/utils": ^1.1.0
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    "@emotion/react": ^11.0.0-rc.0
-    react: ">=16.8.0"
-  peerDependenciesMeta:
-    "@babel/core":
-      optional: true
-    "@types/react":
-      optional: true
-  checksum: 67150fa788785c34e285b90acecc91fe7a63babceaefbeffd053bed0fa31f72a05bfeeb9d15620766e543e007b9ccac2e836812eec2e791f962ec4e52731ae4c
   languageName: node
   linkType: hard
 
@@ -5182,7 +5151,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^8.0.0, @testing-library/dom@npm:^8.3.0":
+"@testing-library/dom@npm:^8.3.0, @testing-library/dom@npm:^8.5.0":
   version: 8.13.0
   resolution: "@testing-library/dom@npm:8.13.0"
   dependencies:
@@ -5215,17 +5184,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:^12":
-  version: 12.1.5
-  resolution: "@testing-library/react@npm:12.1.5"
+"@testing-library/react@npm:^13.3.0":
+  version: 13.3.0
+  resolution: "@testing-library/react@npm:13.3.0"
   dependencies:
     "@babel/runtime": ^7.12.5
-    "@testing-library/dom": ^8.0.0
-    "@types/react-dom": <18.0.0
+    "@testing-library/dom": ^8.5.0
+    "@types/react-dom": ^18.0.0
   peerDependencies:
-    react: <18.0.0
-    react-dom: <18.0.0
-  checksum: 4abd0490405e709a7df584a0db604e508a4612398bb1326e8fa32dd9393b15badc826dcf6d2f7525437886d507871f719f127b9860ed69ddd204d1fa834f576a
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  checksum: 98fd8616a7cae0ecfcbe97b5b3c5b91fbafccf449c04875395ccc0e3f0b139e53b3261b9536ec2169a5e2883a1be2098907209064061fe0c2ff21dfbc785dd40
   languageName: node
   linkType: hard
 
@@ -5644,15 +5613,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:<18.0.0":
-  version: 17.0.16
-  resolution: "@types/react-dom@npm:17.0.16"
-  dependencies:
-    "@types/react": ^17
-  checksum: 2f41a45ef955c8f68a7bcd22343715f15e1560a5e5ba941568b3c970d9151f78fe0975ecf4df7f691339af546555e0f23fa423a0a5bcd7ea4dd4f9c245509936
-  languageName: node
-  linkType: hard
-
 "@types/react-dom@npm:^18.0.0":
   version: 18.0.2
   resolution: "@types/react-dom@npm:18.0.2"
@@ -5679,17 +5639,6 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: 12d0e6bc390709926d8eaeb7d2edb4ef9c9fbe8eac41cb0619d958386700547bff91c880c2a12a9eb1e0d09afa4f1e86fd1b93164c627824465b72123f149f3b
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:^17":
-  version: 17.0.44
-  resolution: "@types/react@npm:17.0.44"
-  dependencies:
-    "@types/prop-types": "*"
-    "@types/scheduler": "*"
-    csstype: ^3.0.2
-  checksum: ebee02778ca08f954c316dc907802264e0121c87b8fa2e7e0156ab0ef2a1b0a09d968c016a3600ec4c9a17dc09b4274f292d9b15a1a5369bb7e4072def82808f
   languageName: node
   linkType: hard
 
@@ -18913,7 +18862,7 @@ prettier@latest:
   resolution: "theme@workspace:packages/theme"
   dependencies:
     "@chakra-ui/react": ^2.1.2
-    "@emotion/react": ^11
+    "@emotion/react": ^11.9.0
     "@types/react": ^18.0.8
     "@types/react-dom": ^18.0.0
     config: "*"
@@ -19488,10 +19437,10 @@ turbo@latest:
   resolution: "ui@workspace:packages/ui"
   dependencies:
     "@chakra-ui/react": ^2.1.2
-    "@emotion/react": ^11
+    "@emotion/react": ^11.9.0
     "@storybook/react": "*"
     "@testing-library/jest-dom": ^5.16.4
-    "@testing-library/react": ^12
+    "@testing-library/react": ^13.3.0
     "@types/react": ^18.0.8
     "@types/react-dom": ^18.0.0
     config: "*"
@@ -19951,16 +19900,18 @@ turbo@latest:
   version: 0.0.0-use.local
   resolution: "utils@workspace:packages/utils"
   dependencies:
-    "@emotion/react": ^11
+    "@emotion/react": ^11.9.0
+    "@reduxjs/toolkit": ^1.8.1
     "@storybook/react": "*"
     "@testing-library/jest-dom": ^5.16.4
-    "@testing-library/react": ^12
+    "@testing-library/react": ^13.3.0
     "@types/react": ^18.0.8
     "@types/react-dom": ^18.0.0
     config: "*"
     eslint: ^7.32.0
     jest: ^28.0.3
     jest-environment-jsdom: ^28.0.2
+    react-redux: ^8.0.1
     stylelint: ^14.8.0
     theme: "*"
     tsconfig: "*"
@@ -20162,7 +20113,7 @@ turbo@latest:
     "@chakra-ui/react": ^2.1.2
     "@chakra-ui/storybook-addon": ^3.0.2
     "@emotion/babel-preset-css-prop": ^11.2.0
-    "@emotion/react": ^11
+    "@emotion/react": ^11.9.0
     "@mdx-js/react": ^1.6.22
     "@reduxjs/toolkit": ^1.8.1
     "@storybook/addon-a11y": ^6.4.19
@@ -20191,11 +20142,11 @@ turbo@latest:
     "@apollo/client": ^3.6.2
     "@auth0/nextjs-auth0": ^1.9.0
     "@chakra-ui/react": ^2.1.2
-    "@emotion/react": ^11
-    "@emotion/styled": ^11
+    "@emotion/react": ^11.9.0
+    "@emotion/styled": ^10.3.0
     "@reduxjs/toolkit": ^1.8.1
     "@testing-library/jest-dom": ^5.16.4
-    "@testing-library/react": ^12
+    "@testing-library/react": ^13.3.0
     "@types/node": ^17.0.29
     "@types/react": ^18.0.8
     "@types/react-dom": ^18.0.0
