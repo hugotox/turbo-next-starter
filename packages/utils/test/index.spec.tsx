@@ -1,4 +1,4 @@
-describe('apollo-client', () => {
+describe('utils', () => {
   it('works', () => {
     expect('yo').toBeTruthy()
   })

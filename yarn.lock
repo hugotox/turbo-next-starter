@@ -19487,6 +19487,7 @@ turbo@latest:
   version: 0.0.0-use.local
   resolution: "ui@workspace:packages/ui"
   dependencies:
+    "@chakra-ui/react": ^2.1.2
     "@emotion/react": ^11
     "@storybook/react": "*"
     "@testing-library/jest-dom": ^5.16.4

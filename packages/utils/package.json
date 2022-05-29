@@ -8,7 +8,6 @@
   "scripts": {
     "lint": "eslint \"**/*.{md,mjs,js,jsx,ts,tsx}\" --cache --quiet",
     "format": "yarn lint --fix && yarn lint:css --fix",
-    "lint:css": "stylelint ./src/**/*.{js,jsx,ts,tsx}",
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
