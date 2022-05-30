@@ -1,5 +1,6 @@
-import { Button } from '@chakra-ui/react'
 import { Meta, Story } from '@storybook/react'
+
+import { Button } from '../src'
 
 const ComponentName: Meta = {
   component: Button,

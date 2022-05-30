@@ -1,5 +1,6 @@
-import { Button, Heading, Link, useColorMode, Code } from '@chakra-ui/react'
+import { Heading, Link, useColorMode, Code } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import { Button } from 'ui'
 
 import { useAppSelector } from '../redux-store'
 
