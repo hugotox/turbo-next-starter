@@ -1,4 +1,4 @@
-import { Heading, Link, useColorMode, Code } from '@chakra-ui/react'
+import { Heading, Link, useColorMode, Code, UnorderedList, ListItem } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import { Button } from 'ui'
 
@@ -8,23 +8,23 @@ export default function Web() {
   const appVersion = useAppSelector((state) => state.app.version)
   const { colorMode, toggleColorMode } = useColorMode()
   return (
-    <div>
-      <Heading as="h1" css={{}} size="4xl">
+    <>
+      <Heading as="h1" size="2xl">
         Turbo Next Starter
       </Heading>
-      <h2>Regular H2</h2>
-      <ul>
-        <li>
+      <br />
+      <UnorderedList>
+        <ListItem>
           <NextLink href="/products" passHref>
             <Link>Products (client side)</Link>
           </NextLink>
-        </li>
-        <li>
+        </ListItem>
+        <ListItem>
           <NextLink href="/products-ssr" passHref>
             <Link>Products (server side)</Link>
           </NextLink>
-        </li>
-      </ul>
+        </ListItem>
+      </UnorderedList>
       <br />
       <NextLink href="/login" passHref>
         <Link>Login page</Link>
@@ -33,6 +33,6 @@ export default function Web() {
       <Code>App version: {appVersion}</Code>
       <br />
       <Button onClick={toggleColorMode}>Toggle {colorMode === 'light' ? 'Dark' : 'Light'}</Button>
-    </div>
+    </>
   )
 }

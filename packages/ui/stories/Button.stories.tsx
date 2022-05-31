@@ -4,7 +4,7 @@ import { Button } from '../src'
 
 const ComponentName: Meta = {
   component: Button,
-  title: 'Button Stories',
+  title: 'Button',
 }
 
 const Template: Story = () => {

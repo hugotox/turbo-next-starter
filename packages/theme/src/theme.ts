@@ -29,7 +29,7 @@ export const theme = extendTheme(
     shadows: {
       outline: '0 0 0 3px var(--chakra-colors-gray-300)',
     },
-    initialColorMode: 'dark',
+    initialColorMode: 'light',
     useSystemColorMode: true,
   },
   withDefaultColorScheme({ colorScheme: COLOR_SCHEME })

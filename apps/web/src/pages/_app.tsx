@@ -8,6 +8,7 @@ import Head from 'next/head'
 import { useEffect } from 'react'
 import { theme, globalStyle } from 'theme'
 
+import { Layout } from '../components/Layout'
 import { useAppDispatch, useAppSelector, wrapper } from '../redux-store'
 import { selectAccessToken, setAccessToken } from '../redux-store/appSlice'
 
@@ -32,13 +33,15 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <UserProvider>
       <ApolloProvider client={apolloClient}>
-        <Head>
-          <meta content="width=device-width, initial-scale=1" name="viewport" />
-          <title>Turbo/Next/Chakra App</title>
-        </Head>
         <ChakraProvider theme={theme}>
+          <Head>
+            <meta content="width=device-width, initial-scale=1" name="viewport" />
+            <title>Turbo/Next/Chakra App</title>
+          </Head>
           <Global styles={globalStyle} />
-          <Component {...pageProps} />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
         </ChakraProvider>
       </ApolloProvider>
     </UserProvider>

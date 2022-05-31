@@ -22,7 +22,7 @@ export default function Products() {
 
   return (
     <div>
-      <Heading as="h1" size="4xl">
+      <Heading as="h1" size="2xl">
         <Link href="/">Turbo Next Starter</Link>
       </Heading>
       <pre>{JSON.stringify(data, null, 2)}</pre>
