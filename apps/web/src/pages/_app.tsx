@@ -9,13 +9,14 @@ import { theme, globalStyle } from 'theme'
 import { useEffectOnce } from 'utils'
 
 import { Layout } from '../components/Layout'
+import { FAUNA_GRAPHQL_BASE_URL } from '../constants'
 import { useAppDispatch, useAppSelector, wrapper } from '../redux-store'
 import { selectAccessToken, setAccessToken } from '../redux-store/appSlice'
 
 function App({ Component, pageProps }: AppProps) {
   const dispatch = useAppDispatch()
   const accessToken = useAppSelector(selectAccessToken)
-  const apolloClient = useApollo(pageProps, accessToken)
+  const apolloClient = useApollo(pageProps, { uri: FAUNA_GRAPHQL_BASE_URL, accessToken })
 
   useEffectOnce(() => {
     const fetchToken = async () => {

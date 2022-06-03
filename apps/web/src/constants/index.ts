@@ -1,0 +1,1 @@
+export const FAUNA_GRAPHQL_BASE_URL = process.env.NEXT_PUBLIC_FAUNA_GRAPHQL_BASE_URL ?? ''

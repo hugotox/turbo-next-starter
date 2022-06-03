@@ -9,10 +9,15 @@ let apolloClient: ApolloClient<NormalizedCacheObject>
 export interface InitializeApolloProps {
   accessToken: string
   initialState?: any | null
+  uri: string
 }
 
-export function initializeApollo({ accessToken, initialState = null }: InitializeApolloProps) {
-  const _apolloClient = apolloClient ?? createApolloClient(accessToken)
+export const initializeApollo = ({
+  accessToken,
+  initialState = null,
+  uri,
+}: InitializeApolloProps) => {
+  const _apolloClient = apolloClient ?? createApolloClient(uri, accessToken)
 
   // If your page has Next.js data fetching methods that use Apollo Client, the initial state
   // gets hydrated here
@@ -37,7 +42,7 @@ export function initializeApollo({ accessToken, initialState = null }: Initializ
     return _apolloClient
   }
   // Create the Apollo Client once in the client only with a valid access token
-  if (!apolloClient && accessToken) {
+  if (!apolloClient && accessToken && uri) {
     apolloClient = _apolloClient
   }
 

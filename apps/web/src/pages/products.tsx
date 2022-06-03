@@ -2,6 +2,9 @@ import { gql, useQuery } from '@apollo/client'
 import { Heading } from '@chakra-ui/react'
 import Link from 'next/link'
 
+import { useAppSelector } from '../redux-store'
+import { selectApolloReady } from '../redux-store/appSlice'
+
 const query = gql`
   query Products {
     allProducts {
@@ -18,7 +21,8 @@ const query = gql`
 `
 
 export default function Products() {
-  const { data } = useQuery(query)
+  const apolloReady = useAppSelector(selectApolloReady)
+  const { data } = useQuery(query, { skip: !apolloReady })
 
   return (
     <div>

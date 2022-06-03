@@ -1,11 +1,13 @@
-import { createSelector } from '@reduxjs/toolkit'
+import { compose } from '@reduxjs/toolkit'
 
 import { RootState } from '../store'
 
 export const selectApp = (state: RootState) => state.app
 
-export const selectAppVersion = createSelector(selectApp, (app) => app.version)
+export const selectAppVersion = compose((app) => app.version, selectApp)
 
-export const selectIsBot = createSelector(selectApp, (app) => app.isBot)
+export const selectIsBot = compose((app) => app.isBot, selectApp)
 
-export const selectAccessToken = createSelector(selectApp, (app) => app.accessToken)
+export const selectAccessToken = compose((app) => app.accessToken, selectApp)
+
+export const selectApolloReady = compose((accessToken) => !!accessToken, selectAccessToken)
