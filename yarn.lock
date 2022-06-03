@@ -14958,6 +14958,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jwt-decode@npm:^3.1.2":
+  version: 3.1.2
+  resolution: "jwt-decode@npm:3.1.2"
+  checksum: 20a4b072d44ce3479f42d0d2c8d3dabeb353081ba4982e40b83a779f2459a70be26441be6c160bfc8c3c6eadf9f6380a036fbb06ac5406b5674e35d8c4205eeb
+  languageName: node
+  linkType: hard
+
 "keyv@npm:^3.0.0":
   version: 3.1.0
   resolution: "keyv@npm:3.1.0"
@@ -21707,6 +21714,7 @@ turbo@latest:
     graphql: ^15.8.0
     jest: ^28.0.3
     jest-environment-jsdom: ^28.0.2
+    jwt-decode: ^3.1.2
     next: 12.1.6
     next-redux-wrapper: ^7.0.5
     next-transpile-modules: ^9.0.0
