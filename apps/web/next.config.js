@@ -1,8 +1,8 @@
 const withTM = require("next-transpile-modules")([
-  "apollo-client",
   "theme", 
   "ui",
-  "utils"
+  "utils",
+  "web-apollo"
 ]);
 
 module.exports = withTM({

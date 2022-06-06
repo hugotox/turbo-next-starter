@@ -2,7 +2,7 @@ import { Heading, Text } from '@chakra-ui/react'
 import { Meta, Story } from '@storybook/react'
 
 const TextStory: Meta = {
-  title: 'Theme',
+  title: 'Theme/Typography',
 }
 
 const Template: Story = () => {
@@ -64,6 +64,6 @@ const Template: Story = () => {
   )
 }
 
-export const Typography = Template.bind({})
+export const Default = Template.bind({})
 
 export default TextStory

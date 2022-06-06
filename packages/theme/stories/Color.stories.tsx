@@ -1,11 +1,11 @@
 import { css, Theme } from '@emotion/react'
-import { theme } from 'theme'
 import { Meta, Story } from '@storybook/react'
+import { theme } from 'theme'
 
 const colors: any = (theme as Theme).colors
 
 const ColorStory: Meta = {
-  title: 'Theme',
+  title: 'Theme/Colors',
 }
 
 const storyStyle = css`
@@ -82,6 +82,6 @@ const Template: Story = () => {
   )
 }
 
-export const Colors = Template.bind({})
+export const Default = Template.bind({})
 
 export default ColorStory

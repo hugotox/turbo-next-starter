@@ -2,21 +2,20 @@ import { ApolloProvider } from '@apollo/client'
 import { UserProvider } from '@auth0/nextjs-auth0'
 import { ChakraProvider } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
-import { useApollo } from 'apollo-client'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { theme, globalStyle } from 'theme'
 import { useEffectOnce } from 'utils'
+import { useApollo } from 'web-apollo'
 
 import { Layout } from '../components/Layout'
-import { FAUNA_GRAPHQL_BASE_URL } from '../constants'
 import { useAppDispatch, useAppSelector, wrapper } from '../redux-store'
 import { selectAccessToken, setAccessToken } from '../redux-store/appSlice'
 
 function App({ Component, pageProps }: AppProps) {
   const dispatch = useAppDispatch()
   const accessToken = useAppSelector(selectAccessToken)
-  const apolloClient = useApollo(pageProps, { uri: FAUNA_GRAPHQL_BASE_URL, accessToken })
+  const apolloClient = useApollo(pageProps, { accessToken })
 
   useEffectOnce(() => {
     const fetchToken = async () => {

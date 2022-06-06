@@ -7614,22 +7614,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apollo-client@*, apollo-client@workspace:packages/apollo-client":
-  version: 0.0.0-use.local
-  resolution: "apollo-client@workspace:packages/apollo-client"
-  dependencies:
-    "@apollo/client": ^3.6.2
-    config: "*"
-    deepmerge: ^4.2.2
-    eslint: ^7.32.0
-    jest: ^28.0.3
-    lodash: ^4.17.21
-    stylelint: ^14.8.0
-    tsconfig: "*"
-    typescript: ^4.5.3
-  languageName: unknown
-  linkType: soft
-
 "app-root-dir@npm:^1.0.2":
   version: 1.0.2
   resolution: "app-root-dir@npm:1.0.2"
@@ -16897,6 +16881,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"package-template@workspace:packages/package-template":
+  version: 0.0.0-use.local
+  resolution: "package-template@workspace:packages/package-template"
+  dependencies:
+    "@chakra-ui/react": ^2.1.2
+    "@emotion/react": ^11
+    "@storybook/react": "*"
+    "@testing-library/jest-dom": ^5.16.4
+    "@testing-library/react": ^13.3.0
+    "@types/react": ^18.0.8
+    "@types/react-dom": ^18.0.0
+    config: "*"
+    eslint: ^7.32.0
+    jest: ^28.0.3
+    jest-environment-jsdom: ^28.0.2
+    stylelint: ^14.8.0
+    theme: "*"
+    tsconfig: "*"
+    typescript: ^4.5.3
+    utils: "*"
+  peerDependencies:
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
 "pako@npm:~1.0.5":
   version: 1.0.11
   resolution: "pako@npm:1.0.11"
@@ -21655,6 +21664,22 @@ turbo@latest:
   languageName: node
   linkType: hard
 
+"web-apollo@*, web-apollo@workspace:packages/web-apollo":
+  version: 0.0.0-use.local
+  resolution: "web-apollo@workspace:packages/web-apollo"
+  dependencies:
+    "@apollo/client": ^3.6.2
+    config: "*"
+    deepmerge: ^4.2.2
+    eslint: ^7.32.0
+    jest: ^28.0.3
+    lodash: ^4.17.21
+    stylelint: ^14.8.0
+    tsconfig: "*"
+    typescript: ^4.5.3
+  languageName: unknown
+  linkType: soft
+
 "web-namespaces@npm:^1.0.0":
   version: 1.1.4
   resolution: "web-namespaces@npm:1.1.4"
@@ -21707,7 +21732,6 @@ turbo@latest:
     "@types/node": ^17.0.29
     "@types/react": ^18.0.8
     "@types/react-dom": ^18.0.0
-    apollo-client: "*"
     config: "*"
     eslint: ^7.32.0
     framer-motion: ^6
@@ -21727,6 +21751,7 @@ turbo@latest:
     typescript: ^4.6.3
     ui: "*"
     utils: "*"
+    web-apollo: "*"
   languageName: unknown
   linkType: soft
 

@@ -4,7 +4,7 @@ import { Button } from '../src'
 
 const ComponentName: Meta = {
   component: Button,
-  title: 'UI/Button',
+  title: 'Package-Template/Button',
 }
 
 const Template: Story = () => {

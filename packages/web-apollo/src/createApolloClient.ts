@@ -1,6 +1,8 @@
 import { ApolloClient, HttpLink, InMemoryCache } from '@apollo/client'
 
-export const createApolloClient = (uri: string, accessToken: string) => {
+import { FAUNA_GRAPHQL_BASE_URL } from './constants'
+
+export const createApolloClient = (accessToken: string) => {
   return new ApolloClient({
     cache: new InMemoryCache(),
     link: new HttpLink({
@@ -9,7 +11,7 @@ export const createApolloClient = (uri: string, accessToken: string) => {
       headers: {
         authorization: `Bearer ${accessToken}`,
       },
-      uri,
+      uri: FAUNA_GRAPHQL_BASE_URL,
     }),
     ssrMode: typeof window === 'undefined',
   })

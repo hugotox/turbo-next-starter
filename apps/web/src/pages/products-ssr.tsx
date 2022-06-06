@@ -1,11 +1,10 @@
 import { gql, useQuery } from '@apollo/client'
 import { getServerSidePropsWrapper, getSession } from '@auth0/nextjs-auth0'
 import { Heading } from '@chakra-ui/react'
-import { addApolloState, initializeApollo } from 'apollo-client'
 import { GetServerSideProps } from 'next'
 import Link from 'next/link'
+import { addApolloState, initializeApollo } from 'web-apollo'
 
-import { FAUNA_GRAPHQL_BASE_URL } from '../constants'
 import { validateSession } from '../utils'
 
 const query = gql`
@@ -43,7 +42,6 @@ export const getServerSideProps: GetServerSideProps = getServerSidePropsWrapper(
       if (session?.accessToken) {
         const apolloClient = initializeApollo({
           accessToken: session.accessToken,
-          uri: FAUNA_GRAPHQL_BASE_URL,
         })
         try {
           await apolloClient.query({

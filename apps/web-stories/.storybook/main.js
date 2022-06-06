@@ -17,6 +17,11 @@ module.exports = {
     presets: [...options.presets, '@emotion/babel-preset-css-prop'],
   }),
 
+  // https://storybook.js.org/docs/react/sharing/package-composition#set-up
+  refs: {
+    '@chakra-ui/react': { disable: true }
+  },
+
   // https://github.com/storybookjs/storybook/issues/16690#issuecomment-971579785
   webpackFinal: async (config) => {
     config.module.rules.push({

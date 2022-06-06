@@ -5,14 +5,13 @@ import { initializeApollo } from './initializeApollo'
 
 export interface UseApolloOptions {
   accessToken: string
-  uri: string
 }
 
-export const useApollo = (pageProps: any = {}, { accessToken, uri }: UseApolloOptions) => {
+export const useApollo = (pageProps: any = {}, { accessToken }: UseApolloOptions) => {
   const initialState = pageProps[APOLLO_STATE_PROP_NAME]
   const store = useMemo(
-    () => initializeApollo({ accessToken, initialState, uri }),
-    [accessToken, initialState, uri]
+    () => initializeApollo({ accessToken, initialState }),
+    [accessToken, initialState]
   )
   return store
 }
