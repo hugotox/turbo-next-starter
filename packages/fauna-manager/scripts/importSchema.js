@@ -5,7 +5,7 @@ const streamToPromise = require('stream-to-promise')
 
 const importSchema = () =>
   streamToPromise(
-    fs.createReadStream('./scripts/schema.gql').pipe(
+    fs.createReadStream('./schema/schema.gql').pipe(
       request.post({
         headers: {
           Authorization: `Bearer ${process.env.FAUNA_ADMIN_KEY}`,

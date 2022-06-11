@@ -8,10 +8,10 @@
   "scripts": {
     "lint": "eslint \"**/*.{md,mjs,js,jsx,ts,tsx}\" --cache --quiet",
     "format": "yarn lint --fix && yarn lint:css --fix",
-    "import-schema": "env-cmd -f .env.local node scripts/importSchema.js",
+    "import-schema": "env-cmd -f .env node scripts/importSchema.js",
     "generate-migration": "fauna-schema-migrate generate",
-    "apply-migration": "env-cmd -f .env.local fauna-schema-migrate apply",
-    "rollback-migration": "env-cmd -f .env.local fauna-schema-migrate rollback"
+    "apply-migration": "env-cmd -f .env fauna-schema-migrate apply",
+    "rollback-migration": "env-cmd -f .env fauna-schema-migrate rollback"
   },
   "devDependencies": {
     "@fauna-labs/fauna-schema-migrate": "^2.2.1",
@@ -22,7 +22,9 @@
     "jest": "^28.0.3",
     "request": "^2.88.2",
     "stream-to-promise": "^3.0.0",
-    "stylelint": "^14.8.0"
+    "stylelint": "^14.8.0",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.6.3"
   },
   "volta": {
     "extends": "../../package.json"
