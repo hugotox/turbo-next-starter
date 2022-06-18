@@ -1,5 +1,6 @@
 import React from 'react'
 import { theme } from 'theme'
+import 'theme/src/fonts/titillium-web/titillium-web.css'
 import * as NextImage from 'next/image'
 
 

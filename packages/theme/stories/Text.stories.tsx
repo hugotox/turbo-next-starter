@@ -21,16 +21,6 @@ const Template: Story = () => {
         Heading 4
       </Heading>
       <br />
-      <Text as={'strong'}>Font weight: 300</Text>
-      <Text fontWeight={300}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed fringilla felis. Sed
-        dapibus sapien libero, vel pretium magna varius ac. Duis efficitur rutrum libero nec
-        feugiat. Mauris id sem at felis tincidunt bibendum eget id felis. Fusce vitae ullamcorper
-        quam. Ut ut faucibus lacus. Donec eget mauris pulvinar, faucibus neque vel, consectetur
-        ante. Nam vitae eros sit amet purus rhoncus varius. Donec porttitor iaculis vulputate.
-        Mauris non semper libero.
-      </Text>
-      <br />
       <Text as={'strong'}>Font weight: 400 (default)</Text>
       <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed fringilla felis. Sed
@@ -41,8 +31,8 @@ const Template: Story = () => {
         Mauris non semper libero.
       </Text>
       <br />
-      <Text as={'strong'}>Font weight: 500</Text>
-      <Text fontWeight={500}>
+      <Text as={'strong'}>Font weight: 600</Text>
+      <Text fontWeight={600}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed fringilla felis. Sed
         dapibus sapien libero, vel pretium magna varius ac. Duis efficitur rutrum libero nec
         feugiat. Mauris id sem at felis tincidunt bibendum eget id felis. Fusce vitae ullamcorper
@@ -51,8 +41,8 @@ const Template: Story = () => {
         Mauris non semper libero.
       </Text>
       <br />
-      <Text as={'strong'}>Font weight: 600</Text>
-      <Text fontWeight={600}>
+      <Text as={'strong'}>Font weight: 700</Text>
+      <Text fontWeight={700}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed fringilla felis. Sed
         dapibus sapien libero, vel pretium magna varius ac. Duis efficitur rutrum libero nec
         feugiat. Mauris id sem at felis tincidunt bibendum eget id felis. Fusce vitae ullamcorper
