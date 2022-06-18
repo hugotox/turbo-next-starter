@@ -22,8 +22,8 @@ export const theme = extendTheme(
       // override colors here
     },
     fonts: {
-      body: 'Ubuntu, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif',
-      heading: 'Ubuntu, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;',
+      body: '"Titillium Web", Helvetica, Arial, "Lucida Grande", sans-serif',
+      heading: '"Titillium Web", Helvetica, Arial, "Lucida Grande", sans-serif;',
       mono: "ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace",
     },
     shadows: {

@@ -4,8 +4,6 @@
   ],
   "extends": "tsconfig/nextjs.json",
   "include": [
-    "declaration.d.ts",
-    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ]

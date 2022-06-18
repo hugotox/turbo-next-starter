@@ -1,6 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
+    "allowJs": true,
     "composite": false,
     "declaration": true,
     "declarationMap": true,
@@ -8,17 +9,20 @@
     "forceConsistentCasingInFileNames": true,
     "inlineSources": false,
     "isolatedModules": true,
+    "jsxImportSource": "@emotion/react",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
-    "strict": true,
-    "jsxImportSource": "@emotion/react"
+    "strict": true
   },
   "display": "Default",
   "exclude": [
+    "dist",
+    "build",
     "node_modules"
   ]
 }

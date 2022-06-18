@@ -4,6 +4,7 @@
   "main": "./index.ts",
   "types": "./index.ts",
   "license": "MIT",
+  "private": true,
   "sideEffects": false,
   "dependencies": {
     "@chakra-ui/react": "^2.1.2",

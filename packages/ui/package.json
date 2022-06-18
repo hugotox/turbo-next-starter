@@ -4,6 +4,7 @@
   "main": "./index.ts",
   "types": "./index.ts",
   "license": "MIT",
+  "private": true,
   "sideEffects": false,
   "scripts": {
     "lint": "eslint \"**/*.{md,mjs,js,jsx,ts,tsx}\" --cache --quiet",

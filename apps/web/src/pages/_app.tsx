@@ -36,7 +36,7 @@ function App({ Component, pageProps }: AppProps) {
         <ChakraProvider theme={theme}>
           <Head>
             <meta content="width=device-width, initial-scale=1" name="viewport" />
-            <title>Turbo/Next/Chakra App</title>
+            <title>Turbo/Next/Chakra/Fauna/Apollo App</title>
           </Head>
           <Global styles={globalStyle} />
           <Layout>

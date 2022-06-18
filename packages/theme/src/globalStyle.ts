@@ -1,4 +1,5 @@
 import { css, Theme } from '@emotion/react'
+import './fonts/titillium-web/titillium-web.css'
 
 /**
  * Based on https://github.com/sindresorhus/modern-normalize
