@@ -1,8 +1,7 @@
-import { Heading, Link, useColorMode, Code, UnorderedList, ListItem } from '@chakra-ui/react'
+import { Heading, useColorMode, Code, UnorderedList, ListItem, Button, Box } from '@chakra-ui/react'
 import { GetStaticProps } from 'next'
 import { useTranslations } from 'next-intl'
-import NextLink from 'next/link'
-import { Button } from 'ui'
+import { Link } from 'ui'
 
 import { useAppSelector } from '../redux-store'
 import { getLangFiles } from '../utils/pages'
@@ -16,27 +15,28 @@ export default function Web() {
       <Heading as="h1" size="2xl">
         {t('heading')}
       </Heading>
+      <Box marginTop={4}>
+        <Button onClick={toggleColorMode}>Toggle {colorMode === 'light' ? 'Dark' : 'Light'}</Button>
+      </Box>
       <br />
       <UnorderedList>
         <ListItem>
-          <NextLink href="/products" passHref>
-            <Link>Products (client side)</Link>
-          </NextLink>
+          <Link href="/login">Login page</Link>
         </ListItem>
         <ListItem>
-          <NextLink href="/products-ssr" passHref>
-            <Link>Products (server side)</Link>
-          </NextLink>
+          <Link href="/products">Products (client side)</Link>
+        </ListItem>
+        <ListItem>
+          <Link href="/products-ssr">Products (server side)</Link>
+        </ListItem>
+        <ListItem>
+          <Link href="/file-upload-example">File upload example</Link>
         </ListItem>
       </UnorderedList>
       <br />
-      <NextLink href="/login" passHref>
-        <Link>Login page</Link>
-      </NextLink>
       <br />
       <Code>App version: {appVersion}</Code>
       <br />
-      <Button onClick={toggleColorMode}>Toggle {colorMode === 'light' ? 'Dark' : 'Light'}</Button>
     </>
   )
 }

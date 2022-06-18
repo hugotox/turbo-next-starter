@@ -1,16 +1,16 @@
 import { Meta, Story } from '@storybook/react'
 
-import { Button } from '../src'
+import { Link } from '../Link'
 
 const ComponentName: Meta = {
-  component: Button,
-  title: 'UI/Button',
+  component: Link,
+  title: 'UI/Link',
 }
 
 const Template: Story = () => {
   return (
     <div>
-      <Button>Chakra-UI is Awesome!</Button>
+      <Link href="/">Chakra-UI is Awesome!</Link>
     </div>
   )
 }
