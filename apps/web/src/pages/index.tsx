@@ -1,10 +1,17 @@
-import { Heading, useColorMode, Code, UnorderedList, ListItem, Button, Box } from '@chakra-ui/react'
+import { Box, Button, Code, Heading, ListItem, UnorderedList, useColorMode } from '@chakra-ui/react'
+import { Theme, css } from '@emotion/react'
 import { GetStaticProps } from 'next'
 import { useTranslations } from 'next-intl'
 import { Link } from 'ui'
 
 import { useAppSelector } from '../redux-store'
 import { getLangFiles } from '../utils/pages'
+
+const style = ({ breakpoints }: Theme) => css`
+  @media (max-width: ${breakpoints.sm}) {
+    color: red;
+  }
+`
 
 export default function Web() {
   const appVersion = useAppSelector((state) => state.app.version)
@@ -37,6 +44,10 @@ export default function Web() {
       <br />
       <Code>App version: {appVersion}</Code>
       <br />
+      {/* <Box bg="red.200" css={style} w={[300, 400, 500]}>
+        This is a box
+      </Box> */}
+      <div css={style}>Hello</div>
     </>
   )
 }

@@ -1,7 +1,6 @@
 /* eslint-disable sort-keys */
-import { extendTheme, withDefaultColorScheme, Theme as ChakraTheme } from '@chakra-ui/react'
+import { Theme as ChakraTheme, extendTheme, withDefaultColorScheme } from '@chakra-ui/react'
 
-import * as breakpoints from './breakpoints'
 import { Button, Link } from './componentStyles'
 
 export type ColorNames = keyof ChakraTheme['colors']
@@ -12,13 +11,6 @@ export const COLOR_SCHEME: ColorNames = 'blue'
 
 export const theme = extendTheme(
   {
-    breakpoints: {
-      sm: breakpoints.BREAKPOINT_SM,
-      md: breakpoints.BREAKPOINT_MD,
-      lg: breakpoints.BREAKPOINT_LG,
-      xl: breakpoints.BREAKPOINT_XL,
-      '2xl': breakpoints.BREAKPOINT_2XL,
-    },
     colors: {
       // override colors here
     },

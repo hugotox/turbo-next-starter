@@ -8,7 +8,7 @@ export const Link: ComponentStyleConfig = {
       textDecorationColor: 'initial',
     },
     textDecoration: 'underline auto rgba(0, 0, 0, 0);',
-    transitionDuration: 'var(--chakra-transition-duration-normal)',
+    transitionDuration: 'var(--chakra-transition-duration-fast)',
     transitionProperty: 'text-decoration-color',
   },
 }

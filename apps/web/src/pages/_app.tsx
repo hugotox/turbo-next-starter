@@ -5,7 +5,7 @@ import { Global } from '@emotion/react'
 import { NextIntlProvider } from 'next-intl'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import { theme, globalStyle } from 'theme'
+import { globalStyle, theme } from 'theme'
 import { useEffectOnce } from 'utils'
 import { useApollo } from 'web-apollo'
 
