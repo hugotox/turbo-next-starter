@@ -10,7 +10,7 @@ const ComponentName: Meta = {
 const Template: Story = () => {
   return (
     <div>
-      <Link href="/">Chakra-UI is Awesome!</Link>
+      <Link href=".">Chakra-UI is Awesome!</Link>
     </div>
   )
 }
