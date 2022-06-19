@@ -12,6 +12,9 @@ const defaultConfig = {
   // Add more setup options before each test is run
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   testEnvironment: 'jest-environment-jsdom',
+  moduleNameMapper: {
+    "\\.(css|less)$": "<rootDir>/styleMock.js"
+  },
   coverageThreshold: {
     global: {
       branches: 100,

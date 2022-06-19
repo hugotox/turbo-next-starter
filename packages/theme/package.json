@@ -7,15 +7,15 @@
   "private": true,
   "sideEffects": false,
   "dependencies": {
-    "@chakra-ui/react": "^2.1.2",
+    "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "^11"
   },
   "devDependencies": {
-    "@types/react": "^18.0.8",
-    "@types/react-dom": "^18.0.0",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
     "config": "*",
     "tsconfig": "*",
-    "typescript": "^4.5.3"
+    "typescript": "^4.7.4"
   },
   "volta": {
     "extends": "../../package.json"

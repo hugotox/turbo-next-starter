@@ -1,6 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { Store, configureStore } from '@reduxjs/toolkit'
-import { render, RenderOptions } from '@testing-library/react'
+import { RenderOptions, render } from '@testing-library/react'
+import { NextIntlProvider } from 'next-intl'
 import { ReactElement } from 'react'
 import { Provider } from 'react-redux'
 import { theme } from 'theme'
@@ -17,18 +18,22 @@ interface Options extends RenderOptions {
   store?: Store
 }
 
-const WithReduxProvider = (store: Store) => {
-  return function WithChakraProvider({ children }: WithChildren) {
+const WithProviders = (store: Store) => {
+  return function Wrapper({ children }: WithChildren) {
     return (
       <Provider store={store}>
-        <ChakraProvider theme={theme}>{children}</ChakraProvider>
+        <ChakraProvider theme={theme}>
+          <NextIntlProvider locale="en" messages={{}}>
+            {children}
+          </NextIntlProvider>
+        </ChakraProvider>
       </Provider>
     )
   }
 }
 
 const renderWithProviders = (ui: ReactElement, options?: Omit<Options, 'wrapper'>) => {
-  return render(ui, { wrapper: WithReduxProvider(options?.store ?? fallbackStore), ...options })
+  return render(ui, { wrapper: WithProviders(options?.store ?? fallbackStore), ...options })
 }
 
 export { renderWithProviders }
