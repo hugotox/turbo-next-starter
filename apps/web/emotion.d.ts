@@ -1,4 +1,4 @@
-import { FunctionInterpolation, Interpolation } from '@emotion/react'
+import { Interpolation } from '@emotion/react'
 import { Theme as CustomTheme } from 'theme'
 
 declare module '@emotion/react' {
@@ -7,6 +7,6 @@ declare module '@emotion/react' {
 
 declare module 'react' {
   interface Attributes {
-    css?: FunctionInterpolation<CustomTheme> | Interpolation<CustomTheme>
+    css?: Interpolation<CustomTheme>
   }
 }

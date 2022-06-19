@@ -1,5 +1,5 @@
 import { Box, Button, Code, Heading, ListItem, UnorderedList, useColorMode } from '@chakra-ui/react'
-import { Theme, css } from '@emotion/react'
+import { Interpolation, Theme, css } from '@emotion/react'
 import { GetStaticProps } from 'next'
 import { useTranslations } from 'next-intl'
 import { Link } from 'ui'
@@ -44,9 +44,9 @@ export default function Web() {
       <br />
       <Code>App version: {appVersion}</Code>
       <br />
-      {/* <Box bg="red.200" css={style} w={[300, 400, 500]}>
+      <Box bg="red.200" css={style as Interpolation<{}>} w={[300, 400, 500]}>
         This is a box
-      </Box> */}
+      </Box>
       <div css={style}>Hello</div>
     </>
   )

@@ -32,10 +32,10 @@ function App({ Component, pageProps }: AppProps) {
   })
 
   return (
-    <UserProvider>
-      <ApolloProvider client={apolloClient}>
+    <ApolloProvider client={apolloClient}>
+      <ChakraProvider theme={theme}>
         <NextIntlProvider messages={pageProps.messages}>
-          <ChakraProvider theme={theme}>
+          <UserProvider>
             <Head>
               <meta content="width=device-width, initial-scale=1" name="viewport" />
               <title>Turbo/Next/Chakra/Fauna/Apollo App</title>
@@ -44,10 +44,10 @@ function App({ Component, pageProps }: AppProps) {
             <Layout>
               <Component {...pageProps} />
             </Layout>
-          </ChakraProvider>
+          </UserProvider>
         </NextIntlProvider>
-      </ApolloProvider>
-    </UserProvider>
+      </ChakraProvider>
+    </ApolloProvider>
   )
 }
 
