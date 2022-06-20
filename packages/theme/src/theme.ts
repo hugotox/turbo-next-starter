@@ -1,4 +1,3 @@
-/* eslint-disable sort-keys */
 import { Theme as ChakraTheme, extendTheme, withDefaultColorScheme } from '@chakra-ui/react'
 
 import { Button, Link } from './componentStyles'
@@ -23,10 +22,10 @@ export const theme = extendTheme(
       heading: '"Titillium Web", Helvetica, Arial, "Lucida Grande", sans-serif;',
       mono: "ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace",
     },
+    initialColorMode: 'light',
     shadows: {
       outline: '0 0 0 3px var(--chakra-colors-gray-300)',
     },
-    initialColorMode: 'light',
     useSystemColorMode: true,
   },
   withDefaultColorScheme({ colorScheme: COLOR_SCHEME })

@@ -5,6 +5,8 @@ const TextStory: Meta = {
   title: 'Theme/Typography',
 }
 
+const fontWeights = [400, 600, 700]
+
 const Template: Story = () => {
   return (
     <div>
@@ -21,35 +23,24 @@ const Template: Story = () => {
         Heading 4
       </Heading>
       <br />
-      <Text as={'strong'}>Font weight: 400 (default)</Text>
-      <Text>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed fringilla felis. Sed
-        dapibus sapien libero, vel pretium magna varius ac. Duis efficitur rutrum libero nec
-        feugiat. Mauris id sem at felis tincidunt bibendum eget id felis. Fusce vitae ullamcorper
-        quam. Ut ut faucibus lacus. Donec eget mauris pulvinar, faucibus neque vel, consectetur
-        ante. Nam vitae eros sit amet purus rhoncus varius. Donec porttitor iaculis vulputate.
-        Mauris non semper libero.
-      </Text>
-      <br />
-      <Text as={'strong'}>Font weight: 600</Text>
-      <Text fontWeight={600}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed fringilla felis. Sed
-        dapibus sapien libero, vel pretium magna varius ac. Duis efficitur rutrum libero nec
-        feugiat. Mauris id sem at felis tincidunt bibendum eget id felis. Fusce vitae ullamcorper
-        quam. Ut ut faucibus lacus. Donec eget mauris pulvinar, faucibus neque vel, consectetur
-        ante. Nam vitae eros sit amet purus rhoncus varius. Donec porttitor iaculis vulputate.
-        Mauris non semper libero.
-      </Text>
-      <br />
-      <Text as={'strong'}>Font weight: 700</Text>
-      <Text fontWeight={700}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed fringilla felis. Sed
-        dapibus sapien libero, vel pretium magna varius ac. Duis efficitur rutrum libero nec
-        feugiat. Mauris id sem at felis tincidunt bibendum eget id felis. Fusce vitae ullamcorper
-        quam. Ut ut faucibus lacus. Donec eget mauris pulvinar, faucibus neque vel, consectetur
-        ante. Nam vitae eros sit amet purus rhoncus varius. Donec porttitor iaculis vulputate.
-        Mauris non semper libero.
-      </Text>
+      {fontWeights.map((fontWeight) => {
+        return (
+          <div key={fontWeight}>
+            <Text as={'strong'}>
+              Font weight: {fontWeight} {fontWeight === 400 && '(default)'}
+            </Text>
+            <Text fontWeight={fontWeight}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed fringilla felis. Sed
+              dapibus sapien libero, vel pretium magna varius ac. Duis efficitur rutrum libero nec
+              feugiat. Mauris id sem at felis tincidunt bibendum eget id felis. Fusce vitae
+              ullamcorper quam. Ut ut faucibus lacus. Donec eget mauris pulvinar, faucibus neque
+              vel, consectetur ante. Nam vitae eros sit amet purus rhoncus varius. Donec porttitor
+              iaculis vulputate. Mauris non semper libero.
+            </Text>
+            <br />
+          </div>
+        )
+      })}
     </div>
   )
 }
