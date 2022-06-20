@@ -11,5 +11,5 @@
     "target": "ES6"
   },
   "display": "React Library",
-  "extends": "./base.json"
+  "extends": "./tsconfig.base.json"
 }

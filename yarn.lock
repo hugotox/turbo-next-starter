@@ -16251,7 +16251,6 @@ __metadata:
     jest-environment-jsdom: ^28.1.1
     stylelint: ^14.9.1
     theme: "*"
-    tsconfig: "*"
     typescript: ^4.7.4
     utils: "*"
   peerDependencies:
@@ -19675,7 +19674,6 @@ __metadata:
     "@types/react": ^18.0.14
     "@types/react-dom": ^18.0.5
     config: "*"
-    tsconfig: "*"
     typescript: ^4.7.4
   languageName: unknown
   linkType: soft
@@ -19996,12 +19994,6 @@ __metadata:
   checksum: 8afa01c673ebb4782ba53d3a12df97fa837ce524f8ad38ee4e2b2fd57f5ac79abc21c574e9e9eb014d93efe7fe8214001b96233b5c6ea75bd1ea82afe17a4c6d
   languageName: node
   linkType: hard
-
-"tsconfig@*, tsconfig@workspace:packages/tsconfig":
-  version: 0.0.0-use.local
-  resolution: "tsconfig@workspace:packages/tsconfig"
-  languageName: unknown
-  linkType: soft
 
 "tslib@npm:2.4.0, tslib@npm:^2.0.0, tslib@npm:^2.0.1, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.3.0, tslib@npm:^2.4.0":
   version: 2.4.0
@@ -20333,7 +20325,6 @@ __metadata:
     jest-environment-jsdom: ^28.1.1
     stylelint: ^14.9.1
     theme: "*"
-    tsconfig: "*"
     typescript: ^4.7.4
     utils: "*"
   peerDependencies:
@@ -20786,7 +20777,6 @@ __metadata:
     react-redux: ^8.0.2
     stylelint: ^14.9.1
     theme: "*"
-    tsconfig: "*"
     typescript: ^4.7.4
   languageName: unknown
   linkType: soft
@@ -20979,7 +20969,6 @@ __metadata:
     jest: ^28.1.1
     lodash: ^4.17.21
     stylelint: ^14.9.1
-    tsconfig: "*"
     typescript: ^4.7.4
   languageName: unknown
   linkType: soft
@@ -21016,7 +21005,6 @@ __metadata:
     react-redux: ^8.0.2
     sb: ^6.5.9
     theme: "*"
-    tsconfig: "*"
     typescript: ^4.7.4
   languageName: unknown
   linkType: soft
@@ -21053,7 +21041,6 @@ __metadata:
     react-redux: ^8.0.2
     stylelint: ^14.9.1
     theme: "*"
-    tsconfig: "*"
     typescript: ^4.7.4
     ui: "*"
     utils: "*"

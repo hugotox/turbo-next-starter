@@ -10,7 +10,10 @@
     "jest.config.js",
     "jest.setup.js",
     "prettier.config.js",
-    "stylelint.config.js"
+    "stylelint.config.js",
+    "tsconfig.base.json",
+    "tsconfig.nextjs.json",
+    "tsconfig.react-lib.json"
   ],
   "dependencies": {
     "@emotion/eslint-plugin": "^11.7.0",

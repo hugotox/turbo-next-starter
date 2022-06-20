@@ -2,7 +2,7 @@
   "exclude": [
     "node_modules"
   ],
-  "extends": "tsconfig/react-library.json",
+  "extends": "config/tsconfig.react-lib.json",
   "include": [
     "emotion.d.ts",
     "stories"
