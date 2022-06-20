@@ -1,4 +1,4 @@
-import { Box, Button, Code, Heading, ListItem, UnorderedList } from '@chakra-ui/react'
+import { Box, Code, Heading, ListItem, UnorderedList } from '@chakra-ui/react'
 import { Interpolation, Theme, css } from '@emotion/react'
 import { GetStaticProps } from 'next'
 import { useTranslations } from 'next-intl'
@@ -16,7 +16,7 @@ const style = ({ breakpoints }: Theme) => css`
 export default function Web() {
   const appVersion = useAppSelector((state) => state.app.version)
 
-  const t = useTranslations('Home')
+  const t = useTranslations('web.Home')
   return (
     <>
       <Heading as="h1" size="2xl">

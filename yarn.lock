@@ -14386,6 +14386,14 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lang@*, lang@workspace:packages/lang":
+  version: 0.0.0-use.local
+  resolution: "lang@workspace:packages/lang"
+  peerDependencies:
+    next-intl: "*"
+  languageName: unknown
+  linkType: soft
+
 "language-subtag-registry@npm:~0.3.2":
   version: 0.3.21
   resolution: "language-subtag-registry@npm:0.3.21"
@@ -16249,6 +16257,7 @@ __metadata:
     eslint: ^8.18.0
     jest: ^28.1.1
     jest-environment-jsdom: ^28.1.1
+    lang: "*"
     stylelint: ^14.9.1
     theme: "*"
     typescript: ^4.7.4
@@ -20333,6 +20342,7 @@ __metadata:
     eslint: ^8.18.0
     jest: ^28.1.1
     jest-environment-jsdom: ^28.1.1
+    lang: "*"
     react-icons: ^4.4.0
     stylelint: ^14.9.1
     theme: "*"
@@ -20340,6 +20350,7 @@ __metadata:
     utils: "*"
   peerDependencies:
     next: "*"
+    next-intl: "*"
     react: "*"
   languageName: unknown
   linkType: soft
@@ -21043,6 +21054,7 @@ __metadata:
     jest: ^28.1.1
     jest-environment-jsdom: ^28.1.1
     jwt-decode: ^3.1.2
+    lang: "*"
     next: 12.1.6
     next-intl: ^2.7.4
     next-redux-wrapper: ^7.0.5

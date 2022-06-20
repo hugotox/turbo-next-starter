@@ -1,11 +1,13 @@
 import { Button, Icon, useColorMode } from '@chakra-ui/react'
+import { useTranslations } from 'next-intl'
 import { FaMoon, FaSun } from 'react-icons/fa'
 
 export const ColorModeToggle = () => {
+  const t = useTranslations('ui.ColorModeToggle')
   const { colorMode, toggleColorMode } = useColorMode()
   return (
     <Button
-      aria-label={colorMode === 'dark' ? 'switch to light mode' : 'switch to dark mode'}
+      aria-label={colorMode === 'dark' ? t('switchToDark') : t('switchToLight')}
       colorScheme="gray"
       onClick={toggleColorMode}
       paddingLeft={2}

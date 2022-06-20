@@ -15,12 +15,14 @@
   },
   "peerDependencies": {
     "next": "*",
+    "next-intl": "*",
     "react": "*"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.2",
     "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "^11",
+    "lang": "*",
     "react-icons": "^4.4.0",
     "theme": "*",
     "utils": "*"

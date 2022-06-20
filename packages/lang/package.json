@@ -1,0 +1,19 @@
+{
+  "name": "lang",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "sideEffects": false,
+  "files": [
+    "en.json",
+    "es.json"
+  ],
+  "types": "index.d.ts",
+  "peerDependencies": {
+    "next-intl": "*"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}
