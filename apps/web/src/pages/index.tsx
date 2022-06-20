@@ -1,8 +1,8 @@
-import { Box, Button, Code, Heading, ListItem, UnorderedList, useColorMode } from '@chakra-ui/react'
+import { Box, Button, Code, Heading, ListItem, UnorderedList } from '@chakra-ui/react'
 import { Interpolation, Theme, css } from '@emotion/react'
 import { GetStaticProps } from 'next'
 import { useTranslations } from 'next-intl'
-import { Link } from 'ui'
+import { ColorModeToggle, Link } from 'ui'
 
 import { useAppSelector } from '../redux-store'
 import { getLangFiles } from '../utils/pages'
@@ -15,7 +15,7 @@ const style = ({ breakpoints }: Theme) => css`
 
 export default function Web() {
   const appVersion = useAppSelector((state) => state.app.version)
-  const { colorMode, toggleColorMode } = useColorMode()
+
   const t = useTranslations('Home')
   return (
     <>
@@ -23,7 +23,7 @@ export default function Web() {
         {t('heading')}
       </Heading>
       <Box marginTop={4}>
-        <Button onClick={toggleColorMode}>Toggle {colorMode === 'light' ? 'Dark' : 'Light'}</Button>
+        <ColorModeToggle />
       </Box>
       <br />
       <UnorderedList>
