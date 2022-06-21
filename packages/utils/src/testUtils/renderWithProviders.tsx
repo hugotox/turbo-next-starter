@@ -1,6 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { Store, configureStore } from '@reduxjs/toolkit'
 import { RenderOptions, render } from '@testing-library/react'
+import enLang from 'lang/en.json'
 import { NextIntlProvider } from 'next-intl'
 import { ReactElement } from 'react'
 import { Provider } from 'react-redux'
@@ -23,7 +24,7 @@ const WithProviders = (store: Store) => {
     return (
       <Provider store={store}>
         <ChakraProvider theme={theme}>
-          <NextIntlProvider locale="en" messages={{}}>
+          <NextIntlProvider locale="en" messages={enLang}>
             {children}
           </NextIntlProvider>
         </ChakraProvider>

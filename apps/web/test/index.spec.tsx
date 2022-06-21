@@ -6,6 +6,6 @@ import { makeStore } from '../src/redux-store'
 describe('index', () => {
   it('renders', () => {
     const { getByText } = renderWithProviders(<Index />, { store: makeStore() })
-    expect(getByText('Home.heading')).toBeInTheDocument()
+    expect(getByText('Turbo Next Starter')).toBeInTheDocument()
   })
 })

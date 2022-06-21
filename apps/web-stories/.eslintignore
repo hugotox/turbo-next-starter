@@ -1,4 +1,6 @@
 .yalc
 .next
+!.storybook
 dist
 node_modules
+storybook-static

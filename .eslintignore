@@ -1,5 +1,6 @@
 .yalc
 .next
+!.storybook
 dist
 node_modules
 next.config.js

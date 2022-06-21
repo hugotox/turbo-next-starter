@@ -16,6 +16,7 @@
     "@emotion/react": "^11",
     "@reduxjs/toolkit": "^1.8.2",
     "next-intl": "^2.7.4",
+    "lang": "*",
     "react-redux": "^8.0.2",
     "theme": "*"
   },
