@@ -13,10 +13,10 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
-    "@emotion/react": "^11",
+    "@emotion/react": "^11.9.3",
     "@reduxjs/toolkit": "^1.8.2",
-    "next-intl": "^2.7.4",
     "lang": "*",
+    "next-intl": "^2.7.4",
     "react-redux": "^8.0.2",
     "theme": "*"
   },
