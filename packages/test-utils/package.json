@@ -1,30 +1,20 @@
 {
-  "name": "package-template",
+  "name": "test-utils",
   "version": "0.0.0",
+  "private": true,
   "main": "./index.ts",
   "types": "./index.ts",
   "license": "MIT",
-  "private": true,
   "sideEffects": false,
   "scripts": {
     "lint": "eslint \"**/*.{md,mjs,js,jsx,ts,tsx}\" --cache --quiet",
     "format": "yarn lint --fix && yarn lint:css --fix",
-    "lint:css": "stylelint ./src/**/*.{js,jsx,ts,tsx}",
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
-  "peerDependencies": {
-    "react": "*"
-  },
-  "dependencies": {
-    "@chakra-ui/react": "^2.2.1",
-    "@emotion/react": "^11.9.3",
-    "lang": "*",
-    "theme": "*",
-    "utils": "*"
-  },
   "devDependencies": {
-    "@storybook/react": "^6.5.9",
+    "@chakra-ui/react": "^2.2.1",
+    "@reduxjs/toolkit": "^1.8.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@types/react": "^18.0.14",
@@ -33,8 +23,12 @@
     "eslint": "^8.18.0",
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
+    "lang": "*",
+    "next-intl": "^2.7.4",
+    "react": "18.2.0",
+    "react-redux": "^8.0.2",
     "stylelint": "^14.9.1",
-    "test-utils": "*",
+    "theme": "*",
     "typescript": "^4.7.4"
   },
   "volta": {

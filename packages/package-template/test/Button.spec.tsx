@@ -1,9 +1,9 @@
 import { Button } from '@chakra-ui/react'
-import { renderWithProviders } from 'utils'
+import { render } from 'test-utils'
 
 describe('ui/Button', () => {
   it('renders', () => {
-    const { getByText } = renderWithProviders(<Button>Boop</Button>)
+    const { getByText } = render(<Button>Boop</Button>)
     expect(getByText('Boop')).toBeInTheDocument()
   })
 })

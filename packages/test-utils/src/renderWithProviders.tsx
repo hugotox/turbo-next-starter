@@ -1,3 +1,4 @@
+/* eslint-disable import/export */
 import { ChakraProvider } from '@chakra-ui/react'
 import { Store, configureStore } from '@reduxjs/toolkit'
 import { RenderOptions, render } from '@testing-library/react'
@@ -19,8 +20,8 @@ interface Options extends RenderOptions {
   store?: Store
 }
 
-const WithProviders = (store: Store) => {
-  return function Wrapper({ children }: WithChildren) {
+const WithReduxProvider = (store: Store) => {
+  return function AllProviders({ children }: WithChildren) {
     return (
       <Provider store={store}>
         <ChakraProvider theme={theme}>
@@ -34,7 +35,11 @@ const WithProviders = (store: Store) => {
 }
 
 const renderWithProviders = (ui: ReactElement, options?: Omit<Options, 'wrapper'>) => {
-  return render(ui, { wrapper: WithProviders(options?.store ?? fallbackStore), ...options })
+  return render(ui, { wrapper: WithReduxProvider(options?.store ?? fallbackStore), ...options })
 }
 
-export { renderWithProviders }
+// re-export everything
+export * from '@testing-library/react'
+
+// override render method
+export { renderWithProviders as render }

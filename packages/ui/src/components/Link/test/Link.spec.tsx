@@ -1,10 +1,10 @@
-import { renderWithProviders } from 'utils'
+import { render } from 'test-utils'
 
 import { Link } from '../Link'
 
 describe('Link', () => {
   it('renders', () => {
-    const { getByText } = renderWithProviders(<Link href="/">Home</Link>)
+    const { getByText } = render(<Link href="/">Home</Link>)
     expect(getByText('Home')).toBeInTheDocument()
   })
 })
