@@ -11,7 +11,7 @@
   "dependencies": {
     "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "^11.9.3",
-    "@reduxjs/toolkit": "^1.8.2",
+    "@reduxjs/toolkit": "^1.8.3",
     "lang": "*",
     "next-intl": "^2.7.4",
     "react-redux": "^8.0.2",
@@ -34,7 +34,7 @@
     "@storybook/theming": "^6.5.9",
     "babel-loader": "^8.2.5",
     "config": "*",
-    "eslint": "^8.18.0",
+    "eslint": "^8.19.0",
     "sb": "^6.5.9",
     "typescript": "^4.7.4"
   },
