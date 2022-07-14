@@ -1,5 +1,4 @@
-import enLang from 'lang/en.json'
-import { NextIntlProvider } from 'next-intl'
+// import { NextIntlProvider } from 'next-intl'
 import * as NextImage from 'next/image'
 import React from 'react'
 import { theme } from 'theme'
@@ -15,13 +14,13 @@ Object.defineProperty(NextImage, 'default', {
   value: (props) => <OriginalNextImage {...props} unoptimized />,
 })
 
-export const decorators = [
-  (Story) => (
-    <NextIntlProvider locale="en" messages={enLang}>
-      <Story />
-    </NextIntlProvider>
-  ),
-]
+// export const decorators = [
+//   (Story) => (
+//     <NextIntlProvider locale="en" messages={enLang}>
+//       <Story />
+//     </NextIntlProvider>
+//   ),
+// ]
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
