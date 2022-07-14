@@ -14644,14 +14644,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lang@*, lang@workspace:packages/lang":
-  version: 0.0.0-use.local
-  resolution: "lang@workspace:packages/lang"
-  peerDependencies:
-    next-intl: "*"
-  languageName: unknown
-  linkType: soft
-
 "language-subtag-registry@npm:~0.3.2":
   version: 0.3.21
   resolution: "language-subtag-registry@npm:0.3.21"
@@ -21063,7 +21055,6 @@ __metadata:
     eslint: ^8.19.0
     jest: ^28.1.2
     jest-environment-jsdom: ^28.1.2
-    lang: "*"
     next-intl: ^2.7.4
     react-redux: ^8.0.2
     stylelint: ^14.9.1
@@ -21306,7 +21297,6 @@ __metadata:
     babel-loader: ^8.2.5
     config: "*"
     eslint: ^8.19.0
-    lang: "*"
     next-intl: ^2.7.4
     react-redux: ^8.0.2
     sb: ^6.5.9
@@ -21338,7 +21328,6 @@ __metadata:
     jest: ^28.1.2
     jest-environment-jsdom: ^28.1.2
     jwt-decode: ^3.1.2
-    lang: "*"
     next: 12.2.2
     next-intl: ^2.7.4
     next-redux-wrapper: ^7.0.5
