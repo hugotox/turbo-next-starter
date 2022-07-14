@@ -1,10 +1,10 @@
 {
   "name": "ui",
   "version": "0.0.0",
+  "private": true,
   "main": "./index.ts",
   "types": "./index.ts",
   "license": "MIT",
-  "private": true,
   "sideEffects": false,
   "scripts": {
     "lint": "eslint \"**/*.{md,mjs,js,jsx,ts,tsx}\" --cache --quiet",
@@ -14,15 +14,11 @@
     "test:coverage": "jest --coverage"
   },
   "peerDependencies": {
-    "next": "*",
-    "next-intl": "*",
     "react": "*"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.0.2",
     "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "^11.9.3",
-    "lang": "*",
     "react-icons": "^4.4.0",
     "theme": "*",
     "utils": "*"
@@ -38,7 +34,6 @@
     "jest": "^28.1.2",
     "jest-environment-jsdom": "^28.1.2",
     "stylelint": "^14.9.1",
-    "test-utils": "*",
     "typescript": "^4.7.4"
   },
   "volta": {

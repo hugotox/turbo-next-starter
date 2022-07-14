@@ -2,11 +2,12 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { Store, configureStore } from '@reduxjs/toolkit'
 import { RenderOptions, render } from '@testing-library/react'
-import enLang from 'lang/en.json'
 import { NextIntlProvider } from 'next-intl'
 import { ReactElement } from 'react'
 import { Provider } from 'react-redux'
 import { theme } from 'theme'
+
+import enLang from '../../lang/index/en.json'
 
 const fallbackStore = configureStore({
   reducer: (state: any) => state,

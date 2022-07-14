@@ -5,7 +5,7 @@ import { GetServerSideProps } from 'next'
 import Link from 'next/link'
 import { addApolloState, initializeApollo } from 'web-apollo'
 
-import { validateSession } from '../utils'
+import { validateSession } from '../utils/pageUtils'
 
 const query = gql`
   query Products {

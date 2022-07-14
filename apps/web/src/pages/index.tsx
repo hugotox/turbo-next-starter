@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl'
 import { ColorModeToggle, Link } from 'ui'
 
 import { useAppSelector } from '../redux-store'
-import { getLangFiles } from '../utils/pages'
+import { getLangMessages } from '../utils/pageUtils'
 
 const style = ({ breakpoints }: Theme) => css`
   @media (max-width: ${breakpoints.sm}) {
@@ -55,10 +55,7 @@ export default function Web() {
 export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => {
   return {
     props: {
-      // You can get the messages from anywhere you like. The recommended
-      // pattern is to put them in JSON files separated by language and read
-      // the desired one based on the `locale` received from Next.js.
-      messages: await getLangFiles(locale),
+      ...(await getLangMessages({ locale, page: 'index' })),
     },
   }
 }

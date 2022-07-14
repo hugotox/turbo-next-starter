@@ -1,6 +1,6 @@
 import { Meta, Story } from '@storybook/react'
 
-import { Button } from '../src'
+import { Button } from '../'
 
 const ComponentName: Meta = {
   component: Button,

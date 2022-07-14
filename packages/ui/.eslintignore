@@ -2,3 +2,4 @@
 .next
 esm
 node_modules
+dist

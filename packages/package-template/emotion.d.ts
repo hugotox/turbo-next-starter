@@ -1,4 +1,4 @@
-import '@emotion/react'
+import { Interpolation } from '@emotion/react'
 import { Theme as CustomTheme } from 'theme'
 
 declare module '@emotion/react' {

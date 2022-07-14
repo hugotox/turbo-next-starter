@@ -1,0 +1,13 @@
+{
+  "web": {
+    "Home": {
+      "heading": "Ejemplo con Turbo y Next"
+    }
+  },
+  "ui": {
+    "ColorModeToggle": {
+      "switchToLight": "cambiar a modo claro",
+      "switchToDark": "cambiar a modo oscuro"
+    }
+  }
+}

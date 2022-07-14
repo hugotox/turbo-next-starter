@@ -1,5 +1,5 @@
 {
-  "extends": "config/tsconfig.react-lib.json",
+  "extends": "config/tsconfig.react-library.json",
   "include": [
     "**/*.ts",
     "**/*.tsx"

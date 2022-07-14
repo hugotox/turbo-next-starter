@@ -47,7 +47,6 @@
     "jest-environment-jsdom": "^28.1.2",
     "next-transpile-modules": "^9.0.0",
     "stylelint": "^14.9.1",
-    "test-utils": "*",
     "typescript": "^4.7.4"
   },
   "volta": {

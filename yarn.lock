@@ -16520,9 +16520,7 @@ __metadata:
     eslint: ^8.19.0
     jest: ^28.1.2
     jest-environment-jsdom: ^28.1.2
-    lang: "*"
     stylelint: ^14.9.1
-    test-utils: "*"
     theme: "*"
     typescript: ^4.7.4
     utils: "*"
@@ -19940,30 +19938,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"test-utils@*, test-utils@workspace:packages/test-utils":
-  version: 0.0.0-use.local
-  resolution: "test-utils@workspace:packages/test-utils"
-  dependencies:
-    "@chakra-ui/react": ^2.2.1
-    "@reduxjs/toolkit": ^1.8.3
-    "@testing-library/jest-dom": ^5.16.4
-    "@testing-library/react": ^13.3.0
-    "@types/react": ^18.0.15
-    "@types/react-dom": ^18.0.6
-    config: "*"
-    eslint: ^8.19.0
-    jest: ^28.1.2
-    jest-environment-jsdom: ^28.1.2
-    lang: "*"
-    next-intl: ^2.7.4
-    react: 18.2.0
-    react-redux: ^8.0.2
-    stylelint: ^14.9.1
-    theme: "*"
-    typescript: ^4.7.4
-  languageName: unknown
-  linkType: soft
-
 "text-table@npm:^0.2.0":
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"
@@ -20628,7 +20602,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ui@workspace:packages/ui"
   dependencies:
-    "@chakra-ui/icons": ^2.0.2
     "@chakra-ui/react": ^2.2.1
     "@emotion/react": ^11.9.3
     "@storybook/react": ^6.5.9
@@ -20640,16 +20613,12 @@ __metadata:
     eslint: ^8.19.0
     jest: ^28.1.2
     jest-environment-jsdom: ^28.1.2
-    lang: "*"
     react-icons: ^4.4.0
     stylelint: ^14.9.1
-    test-utils: "*"
     theme: "*"
     typescript: ^4.7.4
     utils: "*"
   peerDependencies:
-    next: "*"
-    next-intl: "*"
     react: "*"
   languageName: unknown
   linkType: soft
@@ -21378,7 +21347,6 @@ __metadata:
     react-dom: 18.2.0
     react-redux: ^8.0.2
     stylelint: ^14.9.1
-    test-utils: "*"
     theme: "*"
     typescript: ^4.7.4
     ui: "*"

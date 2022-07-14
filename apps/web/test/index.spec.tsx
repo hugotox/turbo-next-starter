@@ -1,7 +1,6 @@
-import { render } from 'test-utils'
-
 import Index from '../src/pages/index'
 import { makeStore } from '../src/redux-store'
+import { render } from '../src/utils/testUtils'
 
 describe('index', () => {
   it('renders', () => {
