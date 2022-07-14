@@ -23,7 +23,6 @@
     "framer-motion": "^6.4.3",
     "graphql": "^15.8.0",
     "jwt-decode": "^3.1.2",
-    "lang": "*",
     "next": "12.2.2",
     "next-intl": "^2.7.4",
     "next-redux-wrapper": "^7.0.5",
