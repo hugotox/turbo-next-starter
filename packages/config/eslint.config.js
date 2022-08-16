@@ -5,7 +5,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:import/recommended',
     'plugin:typescript-sort-keys/recommended',
-    'plugin:markdown/recommended'
+    'plugin:markdown/recommended',
   ],
   plugins: ['@typescript-eslint', '@emotion', 'sort-destructure-keys', 'sort-export-all'],
   settings: {
@@ -45,14 +45,16 @@ module.exports = {
         ],
       },
     ],
-    "sort-export-all/sort-export-all": "error",
+    'sort-export-all/sort-export-all': 'error',
     'react/jsx-sort-props': 'warn',
     'react/sort-prop-types': 'warn',
     'sort-destructure-keys/sort-destructure-keys': 2,
-    'sort-imports': ['error', {
-      ignoreDeclarationSort: true
-    }],
-    'sort-keys': 'warn',
+    'sort-imports': [
+      'error',
+      {
+        ignoreDeclarationSort: true,
+      },
+    ],
     '@next/next/no-html-link-for-pages': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',
   },

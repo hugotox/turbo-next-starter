@@ -16,13 +16,13 @@
     "tsconfig.react-lib.json"
   ],
   "dependencies": {
-    "@emotion/eslint-plugin": "^11.7.0",
+    "@emotion/eslint-plugin": "^11.10.0",
     "@giotramu/stylelint-config": "^10.0.0",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@typescript-eslint/eslint-plugin": "^5.30.5",
-    "eslint-config-next": "^12.2.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "eslint-config-next": "^12.2.5",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-markdown": "^2.2.1",
+    "eslint-plugin-markdown": "^3.0.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-sort-destructure-keys": "^1.4.0",
     "eslint-plugin-sort-export-all": "^1.2.2",
