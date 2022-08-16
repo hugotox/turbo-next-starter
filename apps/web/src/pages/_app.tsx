@@ -9,7 +9,7 @@ import { globalStyle, theme } from 'theme'
 import { useEffectOnce } from 'utils'
 import { useApollo } from 'web-apollo'
 
-import { Layout } from '../components/Layout'
+import { Layout } from '../features/Layout'
 import { useAppDispatch, useAppSelector, wrapper } from '../redux-store'
 import { selectAccessToken, setAccessToken } from '../redux-store/appSlice'
 

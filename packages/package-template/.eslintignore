@@ -2,3 +2,5 @@
 .next
 esm
 node_modules
+build
+dist
