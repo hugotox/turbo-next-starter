@@ -1,5 +1,5 @@
 {
-  "name": "web-stories",
+  "name": "storybook",
   "version": "0.0.0",
   "private": true,
   "sideEffects": false,

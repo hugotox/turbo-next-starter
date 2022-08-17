@@ -1,21 +1,11 @@
-import { Box, Code, Heading, ListItem, UnorderedList } from '@chakra-ui/react'
-import { Interpolation, Theme, css } from '@emotion/react'
+import { Box, Heading, ListItem, UnorderedList } from '@chakra-ui/react'
 import { GetStaticProps } from 'next'
 import { useTranslations } from 'next-intl'
 import { ColorModeToggle, Link } from 'ui'
 
-import { useAppSelector } from '../redux-store'
-import { getLangMessages } from '../utils/pageUtils'
-
-const style = ({ breakpoints }: Theme) => css`
-  @media (max-width: ${breakpoints.sm}) {
-    color: red;
-  }
-`
+import { getLangMessages } from '../lib/pageUtils'
 
 export default function Web() {
-  const appVersion = useAppSelector((state) => state.app.version)
-
   const t = useTranslations('web.Home')
   return (
     <>
@@ -40,14 +30,6 @@ export default function Web() {
           <Link href="/file-upload-example">File upload example</Link>
         </ListItem>
       </UnorderedList>
-      <br />
-      <br />
-      <Code>App version: {appVersion}</Code>
-      <br />
-      <Box bg="red.200" css={style as Interpolation<{}>} w={[300, 400, 500]}>
-        This is a box
-      </Box>
-      <div css={style}>Hello</div>
     </>
   )
 }

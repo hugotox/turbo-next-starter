@@ -9,7 +9,7 @@ This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package ma
 ### Apps and Packages
 
 - `web`: a [Next.js](https://nextjs.org) app with [Redux](https://redux.js.org/) and ChakraUI providers
-- `web-stories`: the [storybook](https://storybook.js.org/) for this repo
+- `storybook`: the [storybook](https://storybook.js.org/) for this repo
 - `config`: `eslint`, `stylelint`, `prettier` and `jest` configurations
 - `theme`: a [ChakraUI](https://chakra-ui.com/) theme
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo

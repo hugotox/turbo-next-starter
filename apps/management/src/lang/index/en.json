@@ -1,0 +1,13 @@
+{
+  "web": {
+    "Home": {
+      "heading": "Turbo Next Starter"
+    }
+  },
+  "ui": {
+    "ColorModeToggle": {
+      "switchToLight": "switch to light mode",
+      "switchToDark": "switch to dark mode"
+    }
+  }
+}

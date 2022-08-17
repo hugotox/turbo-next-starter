@@ -6,8 +6,6 @@ export type ColorNames = keyof ChakraTheme['colors']
 
 export interface Theme extends ChakraTheme {}
 
-export const COLOR_SCHEME: ColorNames = 'blue'
-
 export const theme = extendTheme(
   {
     colors: {
@@ -29,5 +27,5 @@ export const theme = extendTheme(
     },
     useSystemColorMode: true,
   },
-  withDefaultColorScheme({ colorScheme: COLOR_SCHEME })
+  withDefaultColorScheme({ colorScheme: 'blue' })
 )

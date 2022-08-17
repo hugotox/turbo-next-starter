@@ -8,9 +8,8 @@ import { theme } from 'theme'
 import { useEffectOnce } from 'utils'
 import { useApollo } from 'web-apollo'
 
-import { Layout } from '../features/Layout'
-import { useAppDispatch, useAppSelector, wrapper } from '../redux-store'
-import { selectAccessToken, setAccessToken } from '../redux-store/appSlice'
+import { useAppDispatch, useAppSelector, wrapper } from '../lib/store'
+import { selectAccessToken, setAccessToken } from '../lib/store/appSlice'
 
 function App({ Component, pageProps }: AppProps) {
   const dispatch = useAppDispatch()
@@ -37,11 +36,9 @@ function App({ Component, pageProps }: AppProps) {
           <UserProvider>
             <Head>
               <meta content="width=device-width, initial-scale=1" name="viewport" />
-              <title>Turbo/Next/Chakra/Fauna/Apollo App</title>
+              <title>Management App</title>
             </Head>
-            <Layout>
-              <Component {...pageProps} />
-            </Layout>
+            <Component {...pageProps} />
           </UserProvider>
         </NextIntlProvider>
       </ChakraProvider>

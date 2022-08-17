@@ -9895,6 +9895,45 @@ __metadata:
   languageName: node
   linkType: hard
 
+"customer@workspace:apps/customer":
+  version: 0.0.0-use.local
+  resolution: "customer@workspace:apps/customer"
+  dependencies:
+    "@apollo/client": ^3.6.9
+    "@auth0/nextjs-auth0": ^1.9.1
+    "@chakra-ui/react": ^2.2.8
+    "@emotion/react": ^11.10.0
+    "@emotion/styled": ^11.10.0
+    "@reduxjs/toolkit": ^1.8.4
+    "@testing-library/jest-dom": ^5.16.5
+    "@testing-library/react": ^13.3.0
+    "@types/node": ^18.7.5
+    "@types/react": ^18.0.17
+    "@types/react-dom": ^18.0.6
+    config: "*"
+    eslint: ^8.22.0
+    filestack-js: ^3.25.0
+    framer-motion: ^7.1.1
+    graphql: ^15.8.0
+    jest: ^28.1.3
+    jest-environment-jsdom: ^28.1.3
+    jwt-decode: ^3.1.2
+    next: 12.2.5
+    next-intl: ^2.7.4
+    next-redux-wrapper: ^7.0.5
+    next-transpile-modules: ^9.0.0
+    react: 18.2.0
+    react-dom: 18.2.0
+    react-redux: ^8.0.2
+    stylelint: ^14.10.0
+    theme: "*"
+    typescript: ^4.7.4
+    ui: "*"
+    utils: "*"
+    web-apollo: "*"
+  languageName: unknown
+  linkType: soft
+
 "cyclist@npm:^1.0.1":
   version: 1.0.1
   resolution: "cyclist@npm:1.0.1"
@@ -15503,6 +15542,45 @@ __metadata:
   languageName: node
   linkType: hard
 
+"management@workspace:apps/management":
+  version: 0.0.0-use.local
+  resolution: "management@workspace:apps/management"
+  dependencies:
+    "@apollo/client": ^3.6.9
+    "@auth0/nextjs-auth0": ^1.9.1
+    "@chakra-ui/react": ^2.2.8
+    "@emotion/react": ^11.10.0
+    "@emotion/styled": ^11.10.0
+    "@reduxjs/toolkit": ^1.8.4
+    "@testing-library/jest-dom": ^5.16.5
+    "@testing-library/react": ^13.3.0
+    "@types/node": ^18.7.5
+    "@types/react": ^18.0.17
+    "@types/react-dom": ^18.0.6
+    config: "*"
+    eslint: ^8.22.0
+    filestack-js: ^3.25.0
+    framer-motion: ^7.1.1
+    graphql: ^15.8.0
+    jest: ^28.1.3
+    jest-environment-jsdom: ^28.1.3
+    jwt-decode: ^3.1.2
+    next: 12.2.5
+    next-intl: ^2.7.4
+    next-redux-wrapper: ^7.0.5
+    next-transpile-modules: ^9.0.0
+    react: 18.2.0
+    react-dom: 18.2.0
+    react-redux: ^8.0.2
+    stylelint: ^14.10.0
+    theme: "*"
+    typescript: ^4.7.4
+    ui: "*"
+    utils: "*"
+    web-apollo: "*"
+  languageName: unknown
+  linkType: soft
+
 "map-age-cleaner@npm:^0.1.3":
   version: 0.1.3
   resolution: "map-age-cleaner@npm:0.1.3"
@@ -19806,6 +19884,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"storybook@workspace:apps/storybook":
+  version: 0.0.0-use.local
+  resolution: "storybook@workspace:apps/storybook"
+  dependencies:
+    "@babel/core": ^7.18.10
+    "@chakra-ui/react": ^2.2.8
+    "@chakra-ui/storybook-addon": ^4.0.8
+    "@emotion/babel-preset-css-prop": ^11.10.0
+    "@emotion/react": ^11.10.0
+    "@mdx-js/react": ^2.1.2
+    "@reduxjs/toolkit": ^1.8.4
+    "@storybook/addon-a11y": ^6.5.10
+    "@storybook/addon-actions": ^6.5.10
+    "@storybook/addon-docs": ^6.5.10
+    "@storybook/addon-essentials": ^6.5.10
+    "@storybook/addon-interactions": ^6.5.10
+    "@storybook/addon-links": ^6.5.10
+    "@storybook/addons": ^6.5.10
+    "@storybook/builder-webpack5": ^6.5.10
+    "@storybook/manager-webpack5": ^6.5.10
+    "@storybook/react": ^6.5.10
+    "@storybook/testing-library": ^0.0.13
+    "@storybook/theming": ^6.5.10
+    babel-loader: ^8.2.5
+    config: "*"
+    eslint: ^8.22.0
+    next-intl: ^2.7.4
+    react-redux: ^8.0.2
+    sb: ^6.5.10
+    theme: "*"
+    typescript: ^4.7.4
+  languageName: unknown
+  linkType: soft
+
 "stream-browserify@npm:^2.0.1":
   version: 2.0.2
   resolution: "stream-browserify@npm:2.0.2"
@@ -21883,79 +21995,6 @@ __metadata:
   checksum: 5149842ccbfbc56fe4f8758957b3f8c8616a281874a5bb84aa1b305e4436a9bad853d21c629a7b8f174902449e1489c7a6c724fccf60965077c5636bd8aed42b
   languageName: node
   linkType: hard
-
-"web-stories@workspace:apps/web-stories":
-  version: 0.0.0-use.local
-  resolution: "web-stories@workspace:apps/web-stories"
-  dependencies:
-    "@babel/core": ^7.18.10
-    "@chakra-ui/react": ^2.2.8
-    "@chakra-ui/storybook-addon": ^4.0.8
-    "@emotion/babel-preset-css-prop": ^11.10.0
-    "@emotion/react": ^11.10.0
-    "@mdx-js/react": ^2.1.2
-    "@reduxjs/toolkit": ^1.8.4
-    "@storybook/addon-a11y": ^6.5.10
-    "@storybook/addon-actions": ^6.5.10
-    "@storybook/addon-docs": ^6.5.10
-    "@storybook/addon-essentials": ^6.5.10
-    "@storybook/addon-interactions": ^6.5.10
-    "@storybook/addon-links": ^6.5.10
-    "@storybook/addons": ^6.5.10
-    "@storybook/builder-webpack5": ^6.5.10
-    "@storybook/manager-webpack5": ^6.5.10
-    "@storybook/react": ^6.5.10
-    "@storybook/testing-library": ^0.0.13
-    "@storybook/theming": ^6.5.10
-    babel-loader: ^8.2.5
-    config: "*"
-    eslint: ^8.22.0
-    next-intl: ^2.7.4
-    react-redux: ^8.0.2
-    sb: ^6.5.10
-    theme: "*"
-    typescript: ^4.7.4
-  languageName: unknown
-  linkType: soft
-
-"web@workspace:apps/web":
-  version: 0.0.0-use.local
-  resolution: "web@workspace:apps/web"
-  dependencies:
-    "@apollo/client": ^3.6.9
-    "@auth0/nextjs-auth0": ^1.9.1
-    "@chakra-ui/react": ^2.2.8
-    "@emotion/react": ^11.10.0
-    "@emotion/styled": ^11.10.0
-    "@reduxjs/toolkit": ^1.8.4
-    "@testing-library/jest-dom": ^5.16.5
-    "@testing-library/react": ^13.3.0
-    "@types/node": ^18.7.5
-    "@types/react": ^18.0.17
-    "@types/react-dom": ^18.0.6
-    config: "*"
-    eslint: ^8.22.0
-    filestack-js: ^3.25.0
-    framer-motion: ^7.1.1
-    graphql: ^15.8.0
-    jest: ^28.1.3
-    jest-environment-jsdom: ^28.1.3
-    jwt-decode: ^3.1.2
-    next: 12.2.5
-    next-intl: ^2.7.4
-    next-redux-wrapper: ^7.0.5
-    next-transpile-modules: ^9.0.0
-    react: 18.2.0
-    react-dom: 18.2.0
-    react-redux: ^8.0.2
-    stylelint: ^14.10.0
-    theme: "*"
-    typescript: ^4.7.4
-    ui: "*"
-    utils: "*"
-    web-apollo: "*"
-  languageName: unknown
-  linkType: soft
 
 "webidl-conversions@npm:^3.0.0":
   version: 3.0.1

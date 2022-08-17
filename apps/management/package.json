@@ -1,0 +1,54 @@
+{
+  "name": "management",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3003",
+    "build": "next build",
+    "start": "next start -p 3003",
+    "lint": "next lint",
+    "format": "yarn lint --fix && yarn lint:css --fix",
+    "lint:css": "stylelint ./src/**/*.{js,jsx,ts,tsx}",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "@auth0/nextjs-auth0": "^1.9.1",
+    "@chakra-ui/react": "^2.2.8",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@reduxjs/toolkit": "^1.8.4",
+    "filestack-js": "^3.25.0",
+    "framer-motion": "^7.1.1",
+    "graphql": "^15.8.0",
+    "jwt-decode": "^3.1.2",
+    "next": "12.2.5",
+    "next-intl": "^2.7.4",
+    "next-redux-wrapper": "^7.0.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.2",
+    "theme": "*",
+    "ui": "*",
+    "utils": "*",
+    "web-apollo": "*"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@types/node": "^18.7.5",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "config": "*",
+    "eslint": "^8.22.0",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
+    "next-transpile-modules": "^9.0.0",
+    "stylelint": "^14.10.0",
+    "typescript": "^4.7.4"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}
