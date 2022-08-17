@@ -3,8 +3,6 @@ import * as NextImage from 'next/image'
 import React from 'react'
 import { theme } from 'theme'
 
-import 'theme/src/fonts/titillium-web/titillium-web.css'
-
 const OriginalNextImage = NextImage.default
 
 // Fix next.js image in storybook
@@ -35,4 +33,5 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  layout: 'fullscreen',
 }

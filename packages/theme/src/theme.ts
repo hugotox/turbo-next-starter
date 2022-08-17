@@ -1,6 +1,6 @@
 import { Theme as ChakraTheme, extendTheme, withDefaultColorScheme } from '@chakra-ui/react'
 
-import { Button, Link } from './componentStyles'
+import { Button, Heading, Link } from './componentStyles'
 
 export type ColorNames = keyof ChakraTheme['colors']
 
@@ -15,11 +15,12 @@ export const theme = extendTheme(
     },
     components: {
       Button,
+      Heading,
       Link,
     },
     fonts: {
-      body: '"Titillium Web", Helvetica, Arial, "Lucida Grande", sans-serif',
-      heading: '"Titillium Web", Helvetica, Arial, "Lucida Grande", sans-serif;',
+      body: 'Open Sans, Helvetica, Arial, sans-serif',
+      heading: 'Open Sans, Helvetica, Arial, sans-serif;',
       mono: "ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace",
     },
     initialColorMode: 'light',

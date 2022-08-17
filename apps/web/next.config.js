@@ -11,4 +11,5 @@ module.exports = withTM({
     defaultLocale: 'en',
   },
   reactStrictMode: true,
+  optimizeFonts: false,
 })

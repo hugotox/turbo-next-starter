@@ -1,11 +1,10 @@
 import { ApolloProvider } from '@apollo/client'
 import { UserProvider } from '@auth0/nextjs-auth0'
 import { ChakraProvider } from '@chakra-ui/react'
-import { Global } from '@emotion/react'
 import { NextIntlProvider } from 'next-intl'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import { globalStyle, theme } from 'theme'
+import { theme } from 'theme'
 import { useEffectOnce } from 'utils'
 import { useApollo } from 'web-apollo'
 
@@ -40,7 +39,6 @@ function App({ Component, pageProps }: AppProps) {
               <meta content="width=device-width, initial-scale=1" name="viewport" />
               <title>Turbo/Next/Chakra/Fauna/Apollo App</title>
             </Head>
-            <Global styles={globalStyle} />
             <Layout>
               <Component {...pageProps} />
             </Layout>
