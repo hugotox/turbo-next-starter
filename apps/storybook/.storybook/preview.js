@@ -33,5 +33,5 @@ export const parameters = {
       date: /Date$/,
     },
   },
-  layout: 'fullscreen',
+  // layout: 'fullscreen',
 }

@@ -18,8 +18,7 @@ export const theme = extendTheme(
     },
     fonts: {
       body: 'Open Sans, Helvetica, Arial, sans-serif',
-      heading: 'Open Sans, Helvetica, Arial, sans-serif;',
-      mono: "ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace",
+      heading: 'Open Sans, Helvetica, Arial, sans-serif',
     },
     initialColorMode: 'light',
     shadows: {

@@ -1,8 +1,8 @@
-import { css, Theme } from '@emotion/react'
+import { css } from '@emotion/react'
 import { Meta, Story } from '@storybook/react'
 import { theme } from 'theme'
 
-const colors: any = (theme as Theme).colors
+const { colors } = theme
 
 const ColorStory: Meta = {
   title: 'Theme/Colors',

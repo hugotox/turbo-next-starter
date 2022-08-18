@@ -5,7 +5,7 @@ const TextStory: Meta = {
   title: 'Theme/Typography',
 }
 
-const fontWeights = [400, 600, 700]
+const fontWeights = [400, 600]
 
 const Template: Story = () => {
   return (
@@ -33,14 +33,26 @@ const Template: Story = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed fringilla felis. Sed
               dapibus sapien libero, vel pretium magna varius ac. Duis efficitur rutrum libero nec
               feugiat. Mauris id sem at felis tincidunt bibendum eget id felis. Fusce vitae
-              ullamcorper quam. Ut ut faucibus lacus. Donec eget mauris pulvinar, faucibus neque
-              vel, consectetur ante. Nam vitae eros sit amet purus rhoncus varius. Donec porttitor
-              iaculis vulputate. Mauris non semper libero.
+              ullamcorper quam.
+            </Text>
+            <br />
+            <Text fontStyle="italic" fontWeight={fontWeight}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed fringilla felis. Sed
+              dapibus sapien libero, vel pretium magna varius ac. Duis efficitur rutrum libero nec
+              feugiat. Mauris id sem at felis tincidunt bibendum eget id felis. Fusce vitae
+              ullamcorper quam.
             </Text>
             <br />
           </div>
         )
       })}
+      <Text as={'strong'}>Monospace</Text>
+      <Text fontFamily="mono">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed fringilla felis. Sed
+        dapibus sapien libero, vel pretium magna varius ac. Duis efficitur rutrum libero nec
+        feugiat. Mauris id sem at felis tincidunt bibendum eget id felis. Fusce vitae ullamcorper
+        quam. 0123456789
+      </Text>
     </div>
   )
 }

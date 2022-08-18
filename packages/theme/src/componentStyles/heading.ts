@@ -4,6 +4,6 @@ import type { ComponentStyleConfig } from '@chakra-ui/theme'
 
 export const Heading: ComponentStyleConfig = {
   baseStyle: {
-    letterSpacing: -1,
+    letterSpacing: -2.5,
   },
 }
